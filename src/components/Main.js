@@ -1,11 +1,12 @@
-import Video from "./Video"
-
+import Video from "./Video";
+import Text from "./Text";
 const Main = () => {
   return (
-    <div>
-        <Video />
-    </div>
-  )
-}
+    <>
+      <Video />
+      <Text />
+    </>
+  );
+};
 
-export default Main
+export default Main;
