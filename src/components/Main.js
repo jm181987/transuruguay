@@ -16,7 +16,7 @@ const Main = () => {
       <TextAndPhoto />
       <TextAndPhoto2 />
       <InNumber />
-      <Cooperation />
+      {/* <Cooperation /> */}
     </>
   );
 };
