@@ -26,7 +26,7 @@ const NavBar = (onClick) => {
     <nav className="navbar navbar-expand py-3 navbar-absolute">
       <div className="container-fluid">
         <a href="/#" className="navbar-brand">
-          {windowSize.innerWidth}
+          {/* {windowSize.innerWidth} */}
         </a>
         {/* LOGO ICON*/}
         {windowSize.innerWidth < 960 ? (
@@ -124,9 +124,9 @@ const NavBar = (onClick) => {
         )}
         {showNavBar ? (
           <div id="myNav" className="overlay">
-            <a href="/#" className="closebtn">
+            <div className="closebtn">
               <FaTimes onClick={() => setShowNavBar(!showNavBar)} />
-            </a>
+            </div>
             <div className="overlay-content">
               <a href="#section0">Home</a>
               <a href="#section1">O nas</a>

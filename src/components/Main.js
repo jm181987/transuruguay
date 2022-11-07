@@ -6,6 +6,7 @@ import TextAndPhoto from "./TextAndPhoto";
 import TextAndPhoto2 from "./TextAndPhoto2";
 import InNumber from "./InNumber";
 import Cooperation from "./Cooperation";
+import Forms from "./Forms";
 const Main = () => {
   return (
     <>
@@ -16,7 +17,7 @@ const Main = () => {
       <TextAndPhoto />
       <TextAndPhoto2 />
       <InNumber />
-      {/* <Cooperation /> */}
+      <Cooperation />
     </>
   );
 };
