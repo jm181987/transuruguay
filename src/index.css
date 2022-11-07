@@ -1,6 +1,29 @@
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+@media (min-width: 1200px){
+  #title-comapny {
+    font-size: 4rem;
+    color: wheat;
+  }
+  #title-comapny-next {
+    font-size: 4rem;
+    color: wheat;
+  }
+}
 body {
   background-color: black;
   margin: 0px !important;
+  color:white;
+  font-family: 'Lato', sans-serif;
+  scroll-behavior: smooth;
+  /* overflow-x: hidden; */
+
 }
 
 /*--- Bootstrap Mobile Gutter Fix --*/
@@ -83,6 +106,7 @@ body {
 
 a {
   text-decoration: none;
+  
 }
 a:link {
   color:white;
@@ -173,7 +197,9 @@ a:hover {
   right: 45px;
   font-size: 35px;
 }
-
+#myNav {
+  width: 100%;
+}
 @media screen and (max-height: 450px) {
   .overlay a {font-size: 20px}
   .overlay .closebtn {
@@ -182,6 +208,45 @@ a:hover {
   right: 35px;
   }
 }
-#myNav {
-  width: 100%;
+
+#title-comapny {
+  font-size: calc(2.325rem + .9vw);
+  color: wheat;
+  font-weight: bold;
+}
+#title-comapny-next {
+  font-size: calc(2.0rem + .9vw);
+  color: wheat;
+}
+#text-after-title {
+  color: wheat;
+  font-size: calc(1rem + .9vw);
+}
+.describe-truck{
+  font-size: calc(2.4rem + .4vw);
+}
+.black-and-white {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+.black-and-white:hover {
+  -webkit-filter: none; /* Safari 6.0 - 9.0 */
+  filter: none;
+  transition: all 1.0s ease;
+  -webkit-transition: all 1.0s ease;
+}
+.icon-do {
+  font-size: 30px
+}
+
+.icon-do:hover {
+  transform: scale(0.9);
+  transition: all .2s ease;
+  -webkit-transition: all .2s ease;
+}
+.numbers {
+  --bs-gutter-x: 8.75rem;
+}
+.font-footer {
+  font-size: 0.8rem;
 }

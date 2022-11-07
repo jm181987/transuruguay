@@ -42,27 +42,27 @@ const NavBar = (onClick) => {
               </a>
             </li>
             <li className="nav-item">
-              <a href="/#" className="nav-link">
+              <a href="#section1" className="nav-link">
                 <h5>O nas</h5>
               </a>
             </li>
             <li className="nav-item">
-              <a href="/#" className="nav-link">
+              <a href="#section2" className="nav-link">
                 <h5>Czym się zajmujemy</h5>
               </a>
             </li>
             <li className="nav-item">
-              <a href="/#" className="nav-link">
+              <a href="#section3" className="nav-link">
                 <h5>Nasz Tabor</h5>
               </a>
             </li>
             <li className="nav-item">
-              <a href="/#" className="nav-link">
+              <a href="/#section4" className="nav-link">
                 <h5>Współpraca</h5>
               </a>
             </li>
             <li className="nav-item">
-              <a href="/#" className="nav-link">
+              <a href="#section5" className="nav-link">
                 <h5>Kontakt</h5>
               </a>
             </li>
