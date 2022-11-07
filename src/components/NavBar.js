@@ -37,7 +37,7 @@ const NavBar = (onClick) => {
         ) : (
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a href="/#" className="nav-link">
+              <a href="#section0" className="nav-link">
                 <h5>Home</h5>
               </a>
             </li>
@@ -128,12 +128,12 @@ const NavBar = (onClick) => {
               <FaTimes onClick={() => setShowNavBar(!showNavBar)} />
             </a>
             <div className="overlay-content">
-              <a href="/#">Home</a>
-              <a href="/#">O nas</a>
-              <a href="/#">Czym się zajmujemy </a>
-              <a href="/#">Nasz Tabor</a>
-              <a href="/#">Współpraca</a>
-              <a href="/#">Kontakt</a>
+              <a href="#section0">Home</a>
+              <a href="#section1">O nas</a>
+              <a href="#section2">Czym się zajmujemy </a>
+              <a href="#section3">Nasz Tabor</a>
+              <a href="#section4">Współpraca</a>
+              <a href="/#section5">Kontakt</a>
               <a href="/#">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

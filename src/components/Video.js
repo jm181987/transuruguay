@@ -6,7 +6,7 @@ const Video = () => {
   // } 
 
   return (
-    <div className="row">
+    <div className="row" id="section0">
       <div className="video-background">
         <div className="video-wrap">
           <div id="video">
