@@ -18,6 +18,7 @@ const Main = () => {
       <TextAndPhoto2 />
       <InNumber />
       <Cooperation />
+      <Forms />
     </>
   );
 };

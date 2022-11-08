@@ -128,12 +128,12 @@ const NavBar = (onClick) => {
               <FaTimes onClick={() => setShowNavBar(!showNavBar)} />
             </div>
             <div className="overlay-content">
-              <a href="#section0">Home</a>
-              <a href="#section1">O nas</a>
-              <a href="#section2">Czym się zajmujemy </a>
-              <a href="#section3">Nasz Tabor</a>
-              <a href="#section4">Współpraca</a>
-              <a href="/#section5">Kontakt</a>
+              <a href="#section0" onClick={() => setShowNavBar(false)}>Home</a>
+              <a href="#section1"  onClick={() => setShowNavBar(false)}>O nas</a>
+              <a href="#section2"  onClick={() => setShowNavBar(false)}>Czym się zajmujemy </a>
+              <a href="#section3"  onClick={() => setShowNavBar(false)}>Nasz Tabor</a>
+              <a href="#section4"  onClick={() => setShowNavBar(false)}>Współpraca</a>
+              <a href="/#section5"  onClick={() => setShowNavBar(false)}>Kontakt</a>
               <a href="/#">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

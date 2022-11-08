@@ -6,6 +6,11 @@
   right: 35px;
   }
 }
+@media (max-width: 450px) {
+  .transport-text {
+    font-size: calc(3.0em + .9vw) !important;
+}
+}
 @media (min-width: 1200px){
   #title-comapny {
     font-size: 4rem;
@@ -284,3 +289,38 @@ a:hover {
 /* .coop-title{
 
 } */
+.form-control {
+  background-color: #212529 !important;
+  border: none !important;
+  color: white !important;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus,
+.form-control:focus {   
+  border-color: none;
+  box-shadow:none;
+  outline:none;
+  color: white;
+}
+.transport-text {
+    font-size: calc(4.5rem + .9vw);
+    font-weight: 800;
+    color: white;
+    line-height: 90px;
+
+}

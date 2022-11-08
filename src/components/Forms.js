@@ -1,0 +1,125 @@
+import { BiBuilding } from "react-icons/bi";
+import { FaPhone } from "react-icons/fa";
+import { CiMail } from "react-icons/ci";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { useState } from "react";
+const Forms = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_0avem3t",
+        "template_8sitnwi",
+        form.current,
+        "tm6FWZ5W_B19OxRf8"
+      )
+      .then(
+        (result) => {
+          setshowPass(true);
+        },
+        (error) => {
+          setshowError(true)
+        }
+      );
+    e.target.reset();
+    setshowError(false)
+    setshowPass(false)
+  };
+  const [showError,setshowError] = useState(false)
+  const [showPass,setshowPass] = useState(false)
+  return (
+    <div className="row">
+      <div className="col-12 text-center fw-bold mt-5 fs-1">
+        BĄDZMY W KONTAKCIE
+      </div>
+      { showError ? <div className="bg-danger text-center col-12">COŚ POSZŁO NIE TAK SPRÓBUJ JESZCZE RAZ</div>:"" }
+      { showPass ? <div className="bg-success text-center col-12">Wiadomość trafiła we właściwe ręce 😎</div>:"" }
+      <div className="col-lg-8 col-md-12 mx-lg-3 mb-3">
+        <form ref={form} onSubmit={sendEmail}>
+          <div className="mb-3">
+            <label htmlFor="user_name" className="form-label">
+              Imię i nazwisko
+            </label>
+            <input
+              type="text"
+              className="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="user_name "
+              name="user_name"
+            />
+            <div id="titleHelp" className="form-text">
+              {/* Jakiś text */}
+            </div>
+          </div>
+          <div className="mb-3">
+            <label htmlFor="exampleInputEmail1" className="form-label">
+              Adres email
+            </label>
+            <input
+              type="email"
+              className="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              name="user_email"
+              required
+            />
+            <div id="emailHelp" className="form-text">
+              {/* Jakiś text */}
+            </div>
+          </div>
+          <div className="mb-3">
+            <label htmlFor="Title" className="form-label">
+              Tytuł
+            </label>
+            <input
+              type="text"
+              className="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="titleHelp"
+              name="email_title"
+              required
+            />
+            <div id="titleHelp" className="form-text">
+              {/* Jakiś text */}
+            </div>
+          </div>
+          <div className="mb-3">
+            <label htmlFor="exampleFormControlTextarea1" className="form-label">
+              Treść emaila
+            </label>
+            <textarea
+              className="form-control"
+              id="exampleFormControlTextarea1"
+              rows="5"
+              name="email_description"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" className="btn btn-danger">
+            Submit
+          </button>
+        </form>
+      </div>
+      <div className="col-lg-3 col-12 text-center my-lg-5">
+        <BiBuilding className="fs-1" style={{ color: "#E7202D" }} />
+        <p>
+          Bóżnicza 15/2,61-751
+          <br />
+          Poznań NIP: PL6991818531
+          <br />
+          PL REGON: 411186498
+        </p>
+        <FaPhone className="fs-1" style={{ color: "#E7202D" }} />
+        <p>(+48) 111 111 111</p>
+        <CiMail className="fs-1" style={{ color: "#E7202D" }} />
+        <p>Loremipsum@gmail.com</p>
+      </div>
+    </div>
+  );
+};
+
+export default Forms;

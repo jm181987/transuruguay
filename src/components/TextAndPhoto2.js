@@ -23,15 +23,7 @@ const TextaAndPhoto2 = () => {
         >
           TANSPORT ŻYWNOŚCI
         </div>
-        <div
-          style={{
-            fontSize: "calc(4.5rem + .9vw)",
-            fontWeight: "800",
-            color: "white",
-            lineHeight: "90px",
-            textAlign: "right",
-          }}
-        >
+        <div className="transport-text" style={{textAlign:"right"}}>
           CHŁODNIE
         </div>
         <h4 style={{ textAlign: "justify" }}>

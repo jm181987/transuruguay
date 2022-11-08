@@ -1,7 +1,11 @@
 import logo from "./logoEU.jpg";
 const Footer = () => {
   return (
-    <div className="row mt-3" id="section5">
+    <div
+      className="row mt-3"
+      id="section5"
+      style={{ backgroundColor: "rgb(51, 52, 51)" }}
+    >
       <div className="col-12 text-center">
         <div className="fs-6 fw-bold mb-2">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo,
@@ -28,26 +32,26 @@ const Footer = () => {
             |
             <li className="nav-item px-1">
               {" "}
-              <a href="\#"> O nas</a>
+              <a href="#section0"> O nas</a>
             </li>
             |
             <li className="nav-item px-1">
               {" "}
-              <a href="\#"> Czym się zajmujemy</a>
+              <a href="#section1"> Czym się zajmujemy</a>
             </li>
             |
             <li className="nav-item px-1">
               {" "}
-              <a href="\#"> Nasz Tabor</a>
+              <a href="#section3"> Nasz Tabor</a>
             </li>
             |
             <li className="nav-item px-2">
               {" "}
-              <a href="\#"> Współpraca</a>
+              <a href="#section4"> Współpraca</a>
             </li>
             |
             <li className="nav-item px-1">
-              <a href="/#">
+              <a href="#section5">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="17"
