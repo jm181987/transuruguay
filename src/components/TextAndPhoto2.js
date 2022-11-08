@@ -2,8 +2,8 @@ import wywrbeztla from "./wywrbeztla-1.png";
 
 const TextaAndPhoto2 = () => {
   return (
-    <div className="row align-items-center mt-5 mb-3">
-      <div className="col-lg-6 col-sm-12 text-center">
+    <div className="row align-items-center " style={{backgroundColor:'#1b1464'}}>
+      <div className="col-lg-6 col-sm-12 text-center  mt-5 mb-3">
         <img
           src={wywrbeztla}
           alt=""
@@ -17,7 +17,7 @@ const TextaAndPhoto2 = () => {
           style={{
             fontSize: "calc(2.5rem + .8vw)",
             fontWeight: "800",
-            color: "#E7202D",
+            color: "#FFCE32",
             textAlign: "right",
           }}
         >

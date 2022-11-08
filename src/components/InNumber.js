@@ -1,14 +1,14 @@
 const InNumber = () => {
   return (
-    <div className="row" style={{ backgroundColor: "#E7202D" }}>
-      <div className="col-12 text-center mt-5">
+    <div className="row" style={{ backgroundColor: "#FFCE32" }}>
+      <div className="col-12 text-center mt-5 text-dark">
         <div className="fw-bold fs-1">MAC-TRANS W LICZBCH</div>
         <div className="fs-4">
           Jesteśmy zespołem nastawionym na rozwój. Każdego dnia podejmujemy
           działania dzięki którym dążymy do perfekcji.
         </div>
       </div>
-      <div className="d-md-flex numbers">
+      <div className="d-md-flex numbers text-dark">
         <div className="col-md-3 text-center mt-5 mb-3">
           <div className=" fw-bold" style={{ fontSize: "3.5rem" }}>
             12

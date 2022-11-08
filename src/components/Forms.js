@@ -36,7 +36,7 @@ const Forms = () => {
       <div className="col-12 text-center fw-bold mt-5 fs-1">
         BĄDZMY W KONTAKCIE
       </div>
-      { showError ? <div className="bg-danger text-center col-12">COŚ POSZŁO NIE TAK SPRÓBUJ JESZCZE RAZ</div>:"" }
+      { showError ? <div className="bg-danger text-center col-12">COŚ POSZŁO NIE TAK SPRÓBUJ JESZCZE RAZ 😥</div>:"" }
       { showPass ? <div className="bg-success text-center col-12">Wiadomość trafiła we właściwe ręce 😎</div>:"" }
       <div className="col-lg-8 col-md-12 mx-lg-3 mb-3">
         <form ref={form} onSubmit={sendEmail}>
@@ -99,13 +99,13 @@ const Forms = () => {
               required
             ></textarea>
           </div>
-          <button type="submit" className="btn btn-danger">
+          <button type="submit" className="btn btn-warning ">
             Submit
           </button>
         </form>
       </div>
       <div className="col-lg-3 col-12 text-center my-lg-5">
-        <BiBuilding className="fs-1" style={{ color: "#E7202D" }} />
+        <BiBuilding className="fs-1" style={{ color: "#FFC107" }} />
         <p>
           Bóżnicza 15/2,61-751
           <br />
@@ -113,9 +113,9 @@ const Forms = () => {
           <br />
           PL REGON: 411186498
         </p>
-        <FaPhone className="fs-1" style={{ color: "#E7202D" }} />
+        <FaPhone className="fs-1" style={{ color: "#FFC107" }} />
         <p>(+48) 111 111 111</p>
-        <CiMail className="fs-1" style={{ color: "#E7202D" }} />
+        <CiMail className="fs-1" style={{ color: "#FFC107" }} />
         <p>Loremipsum@gmail.com</p>
       </div>
     </div>
