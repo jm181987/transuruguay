@@ -4,7 +4,7 @@ const Footer = () => {
     <div
       className="row mt-3"
       id="section5"
-      style={{ backgroundColor: "rgb(51, 52, 51)" }}
+
     >
       <div className="col-12 text-center">
         <div className="fs-6 fw-bold mb-2">

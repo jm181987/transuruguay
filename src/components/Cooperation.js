@@ -29,12 +29,13 @@ const Cooperation = () => {
             </h2>
             <div
               id="chłodnie1"
-              className="accordion-collapse collapse"
+              className="accordion-collapse collapse "
               aria-labelledby="headingOne"
               data-bs-parent="#accordionExample"
             >
-              <div className="accordion-body text-light">
-                tel: +48 111 111 111 mail:imie.nazwisko@gmail.com
+              <div className="accordion-body text-light" style={{wordWrap: 'break-word'}}>
+                tel: +48 111 111 111
+                mail:imie.nazwisko@gmail.com
               </div>
             </div>
           </div>
@@ -57,7 +58,7 @@ const Cooperation = () => {
               aria-labelledby="headingTwo"
               data-bs-parent="#accordionExample"
             >
-              <div className="accordion-body">
+              <div className="accordion-body text-light" style={{wordWrap: 'break-word'}}>
                 tel: +48 111 111 111 mail:imie.nazwisko@gmail.com
               </div>
             </div>
@@ -82,7 +83,7 @@ const Cooperation = () => {
               aria-labelledby="headingThree"
               data-bs-parent="#accordionExample"
             >
-              <div className="accordion-body text-light">
+              <div className="accordion-body text-light" style={{wordWrap: 'break-word'}}>
                 tel: +48 111 111 111 mail:imie.nazwisko@gmail.com
               </div>
             </div>
@@ -115,7 +116,7 @@ const Cooperation = () => {
               aria-labelledby="headingOne"
               data-bs-parent="#accordionExample"
             >
-              <div className="accordion-body text-light">
+              <div className="accordion-body text-light" style={{wordWrap: 'break-word'}}>
                 tel: +48 111 111 111 mail:imie.nazwisko@gmail.com
               </div>
             </div>
@@ -139,7 +140,7 @@ const Cooperation = () => {
               aria-labelledby="headingTwo"
               data-bs-parent="#accordionExample"
             >
-              <div className="accordion-body">
+            <div className="accordion-body text-light" style={{wordWrap: 'break-word'}}>
                 tel: +48 111 111 111 mail:imie.nazwisko@gmail.com
               </div>
             </div>
@@ -164,7 +165,7 @@ const Cooperation = () => {
               aria-labelledby="headingThree"
               data-bs-parent="#accordionExample"
             >
-              <div className="accordion-body text-light">
+              <div className="accordion-body text-light" style={{wordWrap: 'break-word'}}>
                 tel: +48 111 111 111 mail:imie.nazwisko@gmail.com
               </div>
             </div>
@@ -197,7 +198,7 @@ const Cooperation = () => {
               aria-labelledby="headingOne"
               data-bs-parent="#accordionExample"
             >
-              <div className="accordion-body text-light">
+              <div className="accordion-body text-light" style={{wordWrap: 'break-word'}}>
                 tel: +48 111 111 111 mail:imie.nazwisko@gmail.com
               </div>
             </div>
@@ -221,7 +222,7 @@ const Cooperation = () => {
               aria-labelledby="headingTwo"
               data-bs-parent="#accordionExample"
             >
-              <div className="accordion-body">
+             <div className="accordion-body text-light" style={{wordWrap: 'break-word'}}>
                 tel: +48 111 111 111 mail:imie.nazwisko@gmail.com
               </div>
             </div>
@@ -246,7 +247,7 @@ const Cooperation = () => {
               aria-labelledby="headingThree"
               data-bs-parent="#accordionExample"
             >
-              <div className="accordion-body text-light">
+             <div className="accordion-body text-light" style={{wordWrap: 'break-word'}}>
                 tel: +48 111 111 111 mail:imie.nazwisko@gmail.com
               </div>
             </div>

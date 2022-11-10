@@ -6,7 +6,8 @@ import TextAndPhoto from "./TextAndPhoto";
 import TextAndPhoto2 from "./TextAndPhoto2";
 import InNumber from "./InNumber";
 import Cooperation from "./Cooperation";
-import Forms from "./Forms";
+import FormsEmail from "./FormsEmail";
+import TransportQuote from "./TransportQuote";
 const Main = () => {
   return (
     <>
@@ -18,7 +19,8 @@ const Main = () => {
       <TextAndPhoto2 />
       <InNumber />
       <Cooperation />
-      <Forms />
+      <TransportQuote />
+      <FormsEmail />
     </>
   );
 };

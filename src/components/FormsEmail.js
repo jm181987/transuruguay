@@ -32,13 +32,13 @@ const Forms = () => {
   const [showError,setshowError] = useState(false)
   const [showPass,setshowPass] = useState(false)
   return (
-    <div className="row">
+    <div className="row"  style={{ backgroundColor: "rgb(51,52,51)"}}>
       <div className="col-12 text-center fw-bold mt-5 fs-1">
         BĄDZMY W KONTAKCIE
       </div>
       { showError ? <div className="bg-danger text-center col-12">COŚ POSZŁO NIE TAK SPRÓBUJ JESZCZE RAZ 😥</div>:"" }
       { showPass ? <div className="bg-success text-center col-12">Wiadomość trafiła we właściwe ręce 😎</div>:"" }
-      <div className="col-lg-8 col-md-12 mx-lg-3 mb-3">
+      <div className="col-lg-9 col-md-12 mx-lg-3 mb-3">
         <form ref={form} onSubmit={sendEmail}>
           <div className="mb-3">
             <label htmlFor="user_name" className="form-label">
@@ -104,7 +104,7 @@ const Forms = () => {
           </button>
         </form>
       </div>
-      <div className="col-lg-3 col-12 text-center my-lg-5">
+      <div className="col-lg-2 col-12 text-center my-lg-5 ">
         <BiBuilding className="fs-1" style={{ color: "#FFC107" }} />
         <p>
           Bóżnicza 15/2,61-751

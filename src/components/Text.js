@@ -2,9 +2,11 @@ import React from "react";
 
 const Text = () => {
   return (
-    <div className="row" id="section1" style={{backgroundColor:'#1b1464'}}>
-      <div className="col-11 m-5" > 
+    <div className="row" id="section1" style={{ backgroundColor: "#1b1464" }}>
+      <div className="col-12 mt-5">
         <h2 className="text-center">Lorem ipsum dolor sit amet.</h2>
+      </div>
+      <div className="col m-5 mt-3">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero quidem,
         iste accusantium corporis nulla placeat consequatur quae eum fuga
         debitis facilis, magni quibusdam laboriosam illo officiis eos pariatur,

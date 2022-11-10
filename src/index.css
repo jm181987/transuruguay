@@ -162,7 +162,7 @@ a:hover {
   }
 .navbar-absolute {
   position: absolute;
-  right:60px;
+  right:0px;
   z-index: 1;
 }
 .overlay {
@@ -327,3 +327,7 @@ input[type="color"]:focus,
 .text-on-coop {
   color:#F8F9FA;
 }
+.rmdp-week-day {
+  color:rgb(255, 200, 0) !important;
+}
+

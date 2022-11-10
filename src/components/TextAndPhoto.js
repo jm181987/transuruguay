@@ -4,7 +4,7 @@ const TextaAndPhoto = () => {
   return (
     <div
       className="row align-items-center"
-      style={{ backgroundColor: "#FFCE32" }}
+      style={{ backgroundColor: "#FFC800" }}
       id= "section3"
     >
       <div className="col-lg-6 col-sm-12 p-5 m-0">
