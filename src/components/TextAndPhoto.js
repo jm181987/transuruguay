@@ -1,5 +1,7 @@
-import chlodniabeztla from "./chlodniabeztla.png";
-
+// import chlodniabeztla from "./chlodniabeztla.png";
+import beztla1 from "./beztla1.png"
+import beztla2 from "./beztla2.png"
+import beztla3 from "./beztla3.png"
 const TextaAndPhoto = () => {
   return (
     <div
@@ -30,7 +32,7 @@ const TextaAndPhoto = () => {
       </div>
       <div className="col-lg-6 col-sm-12 text-center m-0">
         <img
-          src={chlodniabeztla}
+          src={beztla1}
           alt=""
           className="img-fluid "
           decoding="async"

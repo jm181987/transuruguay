@@ -47,7 +47,7 @@ const Forms = () => {
             <input
               type="text"
               className="form-control"
-              id="exampleInputEmail1"
+              id=""
               aria-describedby="user_name "
               name="user_name"
             />
@@ -100,7 +100,7 @@ const Forms = () => {
             ></textarea>
           </div>
           <button type="submit" className="btn btn-warning ">
-            Submit
+            <b>Wyślij do nas zapytanie</b>
           </button>
         </form>
       </div>

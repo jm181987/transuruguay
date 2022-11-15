@@ -42,8 +42,7 @@ body {
   
   /*--- Fixed Video Background iOS/Mobile Style--*/
   .video-wrap {
-      background-attachment: none;
-
+    background-attachment: none;
     clip: rect(0, auto, auto, 0);
     position: absolute;
     top: 0;
@@ -294,7 +293,15 @@ a:hover {
   border: none !important;
   color: white !important;
 }
+.form-control:focus {
+  outline: rgb(255, 200, 0) solid 1px !important;
 
+}
+.form-select {
+  background-color:  #212529 !important;
+  color: white !important;
+  border : none !important;
+}
 textarea:focus,
 input[type="text"]:focus,
 input[type="password"]:focus,
@@ -330,4 +337,35 @@ input[type="color"]:focus,
 .rmdp-week-day {
   color:rgb(255, 200, 0) !important;
 }
+.errorInput {
+  padding: 3px;
+  /* color:red; */
+  word-spacing: 1.5px;
+  display: none;
+  color:red;
+}
 
+input:invalid[focused = "true"]{
+  border:1px solid red !important;
+}
+
+input:invalid[focused ="true"] ~ span {
+display: block;
+}
+
+/* Change the white to any color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  /* border: 1px solid green; */
+  /* -webkit-text-fill-color: green; */
+  /* -webkit-box-shadow: 0 0 0px 1000px #000 inset; */
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: white;
+}

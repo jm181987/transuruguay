@@ -1,11 +1,14 @@
 import wywrbeztla from "./wywrbeztla-1.png";
-
+import chlodniabeztla from "./chlodniabeztla.png";
+import beztla1 from "./beztla1.png"
+import beztla2 from "./beztla2.png"
+import beztla3 from "./beztla3.png"
 const TextaAndPhoto2 = () => {
   return (
     <div className="row align-items-center " style={{backgroundColor:'#1b1464'}}>
       <div className="col-lg-6 col-sm-12 text-center  mt-5 mb-3">
         <img
-          src={wywrbeztla}
+          src={beztla3}
           alt=""
           className="img-fluid "
           decoding="async"
