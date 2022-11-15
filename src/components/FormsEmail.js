@@ -32,7 +32,7 @@ const Forms = () => {
   const [showError,setshowError] = useState(false)
   const [showPass,setshowPass] = useState(false)
   return (
-    <div className="row"  style={{ backgroundColor: "rgb(51,52,51)"}}>
+    <div className="row" id="section6" style={{ backgroundColor: "rgb(51,52,51)"}}>
       <div className="col-12 text-center fw-bold mt-5 fs-1">
         BĄDZMY W KONTAKCIE
       </div>

@@ -3,7 +3,6 @@ const Footer = () => {
   return (
     <div
       className="row mt-3"
-      id="section5"
 
     >
       <div className="col-12 text-center">
@@ -48,6 +47,16 @@ const Footer = () => {
             <li className="nav-item px-2">
               {" "}
               <a href="#section4"> Współpraca</a>
+            </li>
+            |
+            <li className="nav-item px-2">
+              {" "}
+              <a href="#section5"> Wycena</a>
+            </li>
+            |
+            <li className="nav-item px-2">
+              {" "}
+              <a href="#section6"> Kontatk</a>
             </li>
             |
             <li className="nav-item px-1">

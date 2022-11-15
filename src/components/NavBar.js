@@ -57,12 +57,17 @@ const NavBar = (onClick) => {
               </a>
             </li>
             <li className="nav-item">
-              <a href="/#section4" className="nav-link">
+              <a href="#section4" className="nav-link">
                 <h5>Współpraca</h5>
               </a>
             </li>
             <li className="nav-item">
               <a href="#section5" className="nav-link">
+                <h5>Wycena</h5>
+              </a>
+            </li>
+            <li className="nav-item">
+              <a href="#section6" className="nav-link">
                 <h5>Kontakt</h5>
               </a>
             </li>

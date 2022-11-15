@@ -6,7 +6,7 @@ import beztla3 from "./beztla3.png"
 const TextaAndPhoto2 = () => {
   return (
     <div className="row align-items-center " style={{backgroundColor:'#1b1464'}}>
-      <div className="col-lg-6 col-sm-12 text-center  mt-5 mb-3">
+      <div className="col-lg-6 col-sm-12 text-center  mt-5 mb-md-3">
         <img
           src={beztla3}
           alt=""

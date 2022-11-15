@@ -82,7 +82,8 @@ const TransportQuote = () => {
   const [passSend, setPassSend] = useState(false);
   return (
     <form ref={form} onSubmit={sendEmail}>
-      <div className="row  mt-4">
+      <div className="row  mt-4" id="section5">
+        <h2 className="text-center p-3">WYCENA TRANSPORTU</h2>
         {/* ZAŁADUNEK */}
         <div className="col-lg-6 col-sm-12">
           <label className="form-label" htmlFor="">
