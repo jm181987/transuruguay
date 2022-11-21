@@ -17,12 +17,11 @@ const Video = () => {
         </div>
       </div>
       <div className="caption text-center">
-        <h2 id="title-comapny">TYTUŁ FIRMY</h2>
-        <h2 id="title-comapny-next">PODTYTUŁ</h2>
+        <h1 id="title-comapny">MARPOL</h1>
+        <h2 id="title-comapny-next">Przedsiębiorstwo Handlowo-Usługowe</h2>
         <h3 id="text-after-title" className="mx-5">
-          Rzetelna Firma transportowa założona w 2001 roku, specjalizująca się w
-          międzynarodowym i krajowym transporcie chłodniczym, FTL oraz towarów
-          sypkich.
+        Firma PHU Marpol Mariusz Michalicki rozpoczęła działalność w sektorze transportowym w roku 1997
+
         </h3>
         <br />
         <a href="#section1" className="btn btn-outline-light btn-lg"><AiOutlineArrowDown /></a>

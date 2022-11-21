@@ -107,16 +107,16 @@ const Forms = () => {
       <div className="col-lg-2 col-12 text-center my-lg-5 ">
         <BiBuilding className="fs-1" style={{ color: "#FFC107" }} />
         <p>
-          Bóżnicza 15/2,61-751
+          Rolna 15A 62-090 Rokietnica
           <br />
-          Poznań NIP: PL6991818531
+           NIP: 777-180-19-83
           <br />
-          PL REGON: 411186498
+          PL REGON: 630836009
         </p>
         <FaPhone className="fs-1" style={{ color: "#FFC107" }} />
-        <p>(+48) 111 111 111</p>
+        <p>(+48) 618 145 376</p>
         <CiMail className="fs-1" style={{ color: "#FFC107" }} />
-        <p>Loremipsum@gmail.com</p>
+        <p>mariuszmichalicki@o2.pl</p>
       </div>
     </div>
   );
