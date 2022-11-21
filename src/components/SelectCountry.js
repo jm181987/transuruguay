@@ -245,7 +245,7 @@ const SelectCountry = ({arialabel,name,onChange,required}) => {
         let i = 0;
   return (
     <div className="form mb-4">
-    <select id="country" name={name} className="form-select bg-black"
+    <select id="country" name={name} className="form-select"
     aria-label= {arialabel} onChange = {onChange} required = {required}>
       <option value="none">----</option>
     {kraje.map((kraj) =><option key={i++} value={kraj}>{kraj}</option>

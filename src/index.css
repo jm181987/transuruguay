@@ -289,17 +289,18 @@ a:hover {
 
 } */
 .form-control {
-  background-color: #212529 !important;
+  background-color: #dddddd !important;
+  /* background-color: #212529 !important; */
   border: none !important;
-  color: white !important;
+  color: black !important;
 }
 .form-control:focus {
   outline: rgb(255, 200, 0) solid 1px !important;
 
 }
 .form-select {
-  background-color:  #212529 !important;
-  color: white !important;
+  background-color: #dddddd  !important;
+  color: black !important;
   border : none !important;
 }
 textarea:focus,
@@ -367,7 +368,7 @@ select:-webkit-autofill:focus {
   /* -webkit-text-fill-color: green; */
   /* -webkit-box-shadow: 0 0 0px 1000px #000 inset; */
   transition: background-color 5000s ease-in-out 0s;
-  -webkit-text-fill-color: white;
+  -webkit-text-fill-color:#212529;;
 }
 
 .img-gallery {
@@ -388,4 +389,27 @@ select:-webkit-autofill:focus {
   width:100%;
   position:absolute;
 
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #FF9900;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #FF9900;
+}
+
+.form-control::-moz-placeholder{
+  color:#212529;
+  opacity:1
+}
+
+.form-control:-ms-input-placeholder{
+  color:#212529;
+}
+
+.form-control::-webkit-input-placeholder{
+  color:#212529;
 }
