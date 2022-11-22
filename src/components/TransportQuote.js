@@ -83,10 +83,10 @@ const TransportQuote = () => {
   return (
     <div className="row r" style={{ backgroundColor: "rgb(27, 20, 100" }}>
       <form ref={form} onSubmit={sendEmail}>
-        <div className="row  mx-5 mt-2" id="section5">
+        <div className="row  mx-5 mt-2 justify-content-center" id="section5">
           <h2 className="text-center p-3">WYCENA TRANSPORTU</h2>
           {/* ZAŁADUNEK */}
-          <div className="col-lg-6 col-sm-12">
+          <div className="col-lg-4 col-sm-12">
             <label className="form-label" htmlFor="">
               Załadunek
             </label>
@@ -134,7 +134,7 @@ const TransportQuote = () => {
             />
           </div>
           {/* ROZŁADUNEK */}
-          <div className="col-lg-6 col-sm-12">
+          <div className="col-lg-4 col-sm-12">
             <label className="form-label" htmlFor="">
               Rozładunek
             </label>
@@ -181,7 +181,7 @@ const TransportQuote = () => {
               }}
             />
           </div>
-          <div className="col-12  my-2">
+          <div className="col-8  my-2">
             <label className="form-label" htmlFor="">
               lub przybliżona data załadunku (za miesiąc, za tydzień etc.)
             </label>
@@ -206,11 +206,11 @@ const TransportQuote = () => {
           </div>
         </div>
         {/* wymiary ładunku */}
-        <div className="row mx-5">
-          <label htmlFor="" className="form-label">
+        <div className="row mx-5 justify-content-center">
+          <label htmlFor="" className="form-label text-center">
             Wymairy ładunku
           </label>
-          <div className="col-lg-4 col-sm-12">
+          <div className="col-lg-2 col-sm-12">
             {" "}
             <InputValues
               type="text"
@@ -223,7 +223,7 @@ const TransportQuote = () => {
               required={true}
             />
           </div>
-          <div className="col-lg-4 col-sm-12">
+          <div className="col-lg-2 col-sm-12">
             {" "}
             <InputValues
               type="text"
@@ -236,7 +236,7 @@ const TransportQuote = () => {
               required={true}
             />
           </div>
-          <div className="col-lg-4 col-sm-12">
+          <div className="col-lg-2 col-sm-12">
             <InputValues
               type="text"
               className="form-control"
@@ -249,8 +249,8 @@ const TransportQuote = () => {
             />
           </div>
         </div>
-        <div className="row mx-5">
-          <div className="col-12  my-2">
+        <div className="row mx-5 justify-content-center">
+          <div className="col-8  my-2">
             <label className="form-label" htmlFor="">
               W przypadku maszyn:
             </label>
@@ -277,11 +277,11 @@ const TransportQuote = () => {
             </div>
           </div>
         </div>
-        <div className="row mx-5">
-          <label htmlFor="" className="form-label">
+        <div className="row mx-5 justify-content-center">
+          <label htmlFor="" className="form-label text-center">
             Dane kontaktowe dla spedytora
           </label>
-          <div className="col-lg-4 col-sm-12 mb-1">
+          <div className="col-lg-2 col-sm-12 mb-1">
             <InputValues
               type="text"
               className="form-control"
@@ -293,7 +293,7 @@ const TransportQuote = () => {
               required={true}
             />
           </div>
-          <div className="col-lg-4 col-sm-12 mb-1">
+          <div className="col-lg-2 col-sm-12 mb-1">
             <InputValues
               type="text"
               className="form-control"
@@ -309,7 +309,7 @@ const TransportQuote = () => {
               pattern="^\S+@\S+$"
             />
           </div>
-          <div className="col-lg-4 col-sm-12 mb-1">
+          <div className="col-lg-2 col-sm-12 mb-1">
             <InputValues
               type="text"
               className="form-control"
@@ -325,12 +325,6 @@ const TransportQuote = () => {
               pattern="(\d[\s-]*){8,8}\d"
             />
           </div>
-          <button
-          type="submit"
-          className="btn btn-warning col-lg-3 col-md-6 mb-4 mx-md-3 col-sm-12"
-        >
-          <b>Prośba o wycenę transportu</b>
-        </button>
         {errorSend ? (
           <div className="bg-danger text-center col-12">
             <b>COŚ POSZŁO NIE TAK, SPRÓBUJ JESZCZE RAZ 😥</b>
@@ -345,6 +339,14 @@ const TransportQuote = () => {
         ) : (
           ""
         )}
+        </div>
+        <div className="justify-content-center d-flex">
+        <button
+          type="submit"
+          className="btn btn-warning col-lg-3 col-md-6 mb-4 mx-md-3 col-sm-12 "
+        >
+          <b>Prośba o wycenę transportu</b>
+        </button>
         </div>
       </form>
     </div>
