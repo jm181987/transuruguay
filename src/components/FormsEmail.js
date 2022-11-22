@@ -51,7 +51,7 @@ const Forms = () => {
         ""
       )}
       <div className="row justify-content-center ">
-        <div className="col-lg-5 col-md-12 mx-lg-3 mb-3">
+        <div className="col-lg-3 col-md-12 mx-lg-3 mb-3">
           <form ref={form} onSubmit={sendEmail}>
             <div className="mb-3">
               <label htmlFor="user_name" className="form-label">
