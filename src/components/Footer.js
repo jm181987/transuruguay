@@ -27,17 +27,17 @@ const Footer = () => {
           <div className="col-lg-6 col-md-12 d-lg-flex justify-content-lg-end p-lg-3 font-footer">
             <ul className="nav justify-content-center">
               <li className="nav-item px-1">
-                <a href="\#"> Home</a>
+                <a href="#section0"> Home</a>
               </li>
               |
               <li className="nav-item px-1">
                 {" "}
-                <a href="#section0"> O nas</a>
+                <a href="#section1"> O nas</a>
               </li>
               |
               <li className="nav-item px-1">
                 {" "}
-                <a href="#section1"> Czym się zajmujemy</a>
+                <a href="#section2"> NACZEPY</a>
               </li>
               |
               <li className="nav-item px-1">
@@ -61,7 +61,7 @@ const Footer = () => {
               </li>
               |
               <li className="nav-item px-1">
-                <a href="#section5">
+                <a href="/#">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="17"

@@ -26,7 +26,7 @@ const NavBar = (onClick) => {
     <>
       <nav className="navbar navbar-expand  m-0 p-0 navbar-absolute">
         <div className="container-fluid">
-      <a href="/#" className="navbar-brand" style={{marginLeft:"6rem", paddingBottom:"15px"}}>
+      <a href="/#" className="navbar-brand" style={{marginLeft:"5.7rem", paddingBottom:"15px"}}>
         <img src={logo} alt="" className="icona" />
       </a>
           {/* {windowSize.innerWidth} */}
@@ -36,7 +36,7 @@ const NavBar = (onClick) => {
               onClick={() => setShowNavBar(!showNavBar)}
             />
           ) : (
-            <ul className="navbar-nav" style={{marginRight:"6rem"}}>
+            <ul className="navbar-nav" style={{marginRight:"5.7rem"}}>
               <li className="nav-item">
                 <a href="#section0" className="nav-link">
                   <h5>Home</h5>
@@ -49,7 +49,7 @@ const NavBar = (onClick) => {
               </li>
               <li className="nav-item">
                 <a href="#section2" className="nav-link">
-                  <h5>Czym się zajmujemy</h5>
+                  <h5>Naczepy</h5>
                 </a>
               </li>
               <li className="nav-item">
@@ -141,7 +141,7 @@ const NavBar = (onClick) => {
                   O nas
                 </a>
                 <a href="#section2" onClick={() => setShowNavBar(false)}>
-                  Czym się zajmujemy{" "}
+                  Naczepy{" "}
                 </a>
                 <a href="#section3" onClick={() => setShowNavBar(false)}>
                   Nasz Tabor
@@ -150,6 +150,9 @@ const NavBar = (onClick) => {
                   Współpraca
                 </a>
                 <a href="/#section5" onClick={() => setShowNavBar(false)}>
+                  Wycena
+                </a>
+                <a href="/#section6" onClick={() => setShowNavBar(false)}>
                   Kontakt
                 </a>
                 <a href="/#">

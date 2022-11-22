@@ -5,18 +5,18 @@
   top: 15px;
   right: 35px;
   }
-  /* .icona {
-    height: 100px;
-    width: 150px;
-    position: absolute;
-    top:54.5% !important;
-    left:50% !important;
-  } */
 }
-
+@media screen and (min-height: 450px) {
+  #title-comapny {
+    font-size: calc(3.325rem + .9vw) !important;
+  }
+  #title-comapny-next {
+    font-size: 2rem !important;
+  }
+}
 @media (max-width: 450px) {
   .transport-text {
-    font-size: calc(3.0em + .9vw) !important;
+    font-size: calc(2.7em + .9vw) !important;
 }
 }
 @media (min-width: 1200px){
@@ -41,6 +41,7 @@ body {
   color:white;
   font-family: 'Lato', sans-serif;
   scroll-behavior: smooth;
+  font-size: 18px;
   /* overflow-x: hidden; */
 
 }
@@ -439,8 +440,4 @@ textarea:-moz-placeholder {
 .icona {
   height:25px;
   width: 120px;
-  /* position: absolute; */
-  /* top:15.5%;
-  left:20%; */
-  margin-right: 4rem;
 }

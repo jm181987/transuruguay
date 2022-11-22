@@ -133,7 +133,7 @@ const Forms = () => {
             </div>
           </form>
         </div>
-        <div className="col-lg-2 col-12 justify-content-center text-center mt-5">
+        <div className="col-lg-2 col-12 justify-content-center text-center mt-lg-5 m-3 mt-0">
           <BiBuilding className="fs-1 mt-5" style={{ color: "#FFC107" }} />
           <p>
             Rolna 15A 62-090 Rokietnica
