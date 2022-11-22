@@ -172,10 +172,11 @@ a:hover {
   min-height: 100vh !important;
   }
 .navbar-absolute {
-  /* position: absolute; */
+  position: absolute;
   /* right:75px; */
   z-index: 1;
   width: 100%;
+  background: rgba(0, 0, 0, 0.5);
 }
 .overlay {
   height: 100%;
@@ -230,17 +231,26 @@ a:hover {
 }
 
 #title-comapny {
-  font-size: calc(2.325rem + .9vw);
+  font-size: calc(4.325rem + .9vw);
   color: wheat;
   font-weight: bold;
+  letter-spacing: .2rem;
+  text-shadow: .1rem .1rem .3rem black;
+
 }
 #title-comapny-next {
   font-size: calc(2.0rem + .9vw);
   color: wheat;
+  font-weight: bold;
+  letter-spacing: .2rem;
+  text-shadow: .1rem .1rem .8rem black;
 }
 #text-after-title {
-  color: wheat;
   font-size: calc(1rem + .9vw);
+  color: wheat;
+  font-weight: bold;
+  letter-spacing: .2rem;
+  text-shadow: .1rem .1rem .8rem black;
 }
 .describe-truck{
   font-size: calc(2.4rem + .4vw);
@@ -432,5 +442,5 @@ textarea:-moz-placeholder {
   /* position: absolute; */
   /* top:15.5%;
   left:20%; */
-margin-right: 4rem;
+  margin-right: 4rem;
 }

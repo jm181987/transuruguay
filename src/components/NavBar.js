@@ -26,12 +26,12 @@ const NavBar = (onClick) => {
     <>
       <nav className="navbar navbar-expand  m-0 p-0 navbar-absolute">
         <div className="container-fluid">
-      <a href="/#" className="navbar-brand" style={{marginLeft:"6rem", marginTop:"-15px"}}>
+      <a href="/#" className="navbar-brand" style={{marginLeft:"6rem", paddingBottom:"15px"}}>
         <img src={logo} alt="" className="icona" />
       </a>
-          {/* LOGO ICON*/}
-          {windowSize.innerWidth < 960 ? (
-            <GiHamburgerMenu
+          {/* {windowSize.innerWidth} */}
+          {windowSize.innerWidth < 1205 ? (    
+             <GiHamburgerMenu
               style={{ color: "#f6f6f6", fontSize: "30px", cursor: "pointer" }}
               onClick={() => setShowNavBar(!showNavBar)}
             />

@@ -7,7 +7,7 @@ const Text = () => {
         <h2 className="text-center fw-bold">Kilka słów o nas</h2>
       </div>
       <div className="col m-5 mt-3">
-        <div className="fs-5">
+        <div className="fs-5" style={{letterSpacing:"0.05rem"}}>
           Nasza <b>Firma PHU Marpol Mariusz Michalicki</b> rozpoczęła
           działalność w sektorze transportowym w roku 1997. Realizujemy zlecenia
           na transport ciężarowy w całej Europie i Skandynawii, Nasz transport

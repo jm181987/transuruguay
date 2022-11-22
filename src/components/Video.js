@@ -1,4 +1,5 @@
-import time from "./media/star.mp4";
+import star from "./media/star.mp4";
+import truckVideo from "./media/truck-video.mp4";
 import { AiOutlineArrowDown } from "react-icons/ai";
 const Video = () => {
   // const removeHash =() => {
@@ -11,7 +12,7 @@ const Video = () => {
         <div className="video-wrap">
           <div id="video">
             <video id="bgvid" autoPlay loop muted playsInline>
-              <source src={time} type="video/mp4" />
+              <source src={truckVideo} type="video/mp4" />
             </video>
           </div>
         </div>
@@ -24,7 +25,7 @@ const Video = () => {
 
         </h3>
         <br />
-        <a href="#section1" className="btn btn-outline-light btn-lg"><AiOutlineArrowDown /></a>
+        <a href="#section1" className="btn btn-outline-light btn-lg" style={{border:"2px solid white"}}><AiOutlineArrowDown /></a>
       </div>
     </div>
   );

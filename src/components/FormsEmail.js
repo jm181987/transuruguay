@@ -51,7 +51,7 @@ const Forms = () => {
         ""
       )}
       <div className="row ">
-        <div className="col-6 map-responsive m-3">
+        <div className="col-lg-6 col-md-12 map-responsive m-3">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1021.0095103875435!2d16.750266578062792!3d52.50839755934989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4704405c79fab24d%3A0x9bfe31c8e6591d78!2sRolna%2015A%2C%2062-090%20Rokietnica!5e0!3m2!1spl!2spl!4v1668842427492!5m2!1spl!2spl"
             width="100vw"
