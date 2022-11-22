@@ -1,6 +1,6 @@
-import choldnica1 from "./chlodnia1111.jpg";
-import galeria2 from "./galeria2.jpg";
-import galeria3 from "./galeria3.jpg";
+import choldnica1 from "./media/chlodnia1111.jpg";
+import galeria2 from "./media/galeria2.jpg";
+import galeria3 from "./media/galeria3.jpg";
 const Gallery = () => {
   return (
     <div className="row" style={{ backgroundColor: "#FFC800" }}>

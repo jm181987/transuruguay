@@ -81,12 +81,12 @@ const TransportQuote = () => {
   const [errorSend, setErrorSend] = useState(false);
   const [passSend, setPassSend] = useState(false);
   return (
-    <div className="row r" style={{ backgroundColor: "rgb(27, 20, 100" }}>
+    <div className="row" style={{ backgroundColor: "rgb(27, 20, 100" }}>
       <form ref={form} onSubmit={sendEmail}>
-        <div className="row  mx-5 mt-2 justify-content-center" id="section5">
+        <div className="row mx-5 mt-2" id="section5">
           <h2 className="text-center p-3">WYCENA TRANSPORTU</h2>
           {/* ZAŁADUNEK */}
-          <div className="col-lg-4 col-sm-12">
+          <div className="col-lg-6 col-sm-12">
             <label className="form-label" htmlFor="">
               Załadunek
             </label>
@@ -111,7 +111,7 @@ const TransportQuote = () => {
             <label htmlFor="">Konkretna data załadunku</label>
             <br />
             <DatePicker
-              className="bg-dark"
+              className="bg-light"
               inputClass="form-control"
               placeholder="Wybierz date 📅 "
               aria-label="Wybierz date"
@@ -122,20 +122,19 @@ const TransportQuote = () => {
               mapDays={({ date, today, isSameDate }) => {
                 let props = {};
 
-                props.style = { color: "#c4c7ca" };
+                props.style = { color: "black" };
 
                 if (isSameDate(date, today)) {
-                  props.style.backgroundColor = "rgb(255, 200, 0)";
+                  props.style.backgroundColor = "#DDDDD";
                   props.style.color = "black";
                 }
 
                 return props;
               }}
             />
-          </div>
-          {/* ROZŁADUNEK */}
-          <div className="col-lg-4 col-sm-12">
-            <label className="form-label" htmlFor="">
+            <br />
+            {/* ROZŁADUNEK */}
+            <label className="form-label mt-3" htmlFor="">
               Rozładunek
             </label>
             <SelectCountry
@@ -180,9 +179,8 @@ const TransportQuote = () => {
                 return props;
               }}
             />
-          </div>
-          <div className="col-lg-8  my-2 col-sm-12">
-            <label className="form-label" htmlFor="">
+            <br />
+            <label className="form-label my-3" htmlFor="">
               lub przybliżona data załadunku (za miesiąc, za tydzień etc.)
             </label>
             <InputValues
@@ -204,150 +202,136 @@ const TransportQuote = () => {
               required={true}
             />
           </div>
-        </div>
-        {/* wymiary ładunku */}
-        <div className="row mx-5 justify-content-center">
-          <label htmlFor="" className="form-label text-center">
-            Wymairy ładunku
-          </label>
-          <div className="col-lg-2 col-sm-12">
-            {" "}
-            <InputValues
-              type="text"
-              className="form-control"
-              placeholder="długość"
-              aria-label="długość"
-              name="dlugosc_ladunku"
-              value={values["dlugosc_ladunku"]}
-              onChange={onChange}
-              required={true}
-            />
-          </div>
-          <div className="col-lg-2 col-sm-12">
-            {" "}
-            <InputValues
-              type="text"
-              className="form-control"
-              placeholder="szerokość"
-              aria-label="szerokość"
-              name="szerokosc_ladunku"
-              value={values["szerokosc_ladunku"]}
-              onChange={onChange}
-              required={true}
-            />
-          </div>
-          <div className="col-lg-2 col-sm-12">
-            <InputValues
-              type="text"
-              className="form-control"
-              placeholder="wysokość"
-              aria-label="wysokość"
-              name="wysokosc_ladunku"
-              value={values["wysokosc_ladunku"]}
-              onChange={onChange}
-              required={true}
-            />
-          </div>
-        </div>
-        <div className="row mx-5 justify-content-center">
-          <div className="col-lg-8  my-2 col-sm-12">
-            <label className="form-label" htmlFor="">
-              W przypadku maszyn:
+          {/* wymiary ładunku */}
+          {/* <div className="row mx-5 justify-content-center"> */}
+          <div className="col-lg-6 col-sm-12">
+            <label htmlFor="" className="form-label text-center">
+              Wymairy ładunku
             </label>
-            <InputValues
-              type="text"
-              className="form-control"
-              placeholder="model i rok produkcji"
-              aria-label="model i rok produkcji"
-              name="model_rok_produkcji"
-              required={false}
-            />
-            <div className="form-floating">
-              <textarea
+            <div className="col-lg-12 col-sm-12">
+              {" "}
+              <InputValues
+                type="text"
                 className="form-control"
-                placeholder="Dodaj opis"
-                aria-label="Dodaj opis"
-                name="opis"
-                id="floatingTextarea"
-                style={{ height: "150px" }}
-              ></textarea>
-              <label htmlFor="floatingTextarea" style={{ color: "#212529" }}>
-                Dodatkowy opis
-              </label>
+                placeholder="długość"
+                aria-label="długość"
+                name="dlugosc_ladunku"
+                value={values["dlugosc_ladunku"]}
+                onChange={onChange}
+                required={true}
+              />
+            </div>
+            <div className="col-lg-12 col-sm-12">
+              {" "}
+              <InputValues
+                type="text"
+                className="form-control"
+                placeholder="szerokość"
+                aria-label="szerokość"
+                name="szerokosc_ladunku"
+                value={values["szerokosc_ladunku"]}
+                onChange={onChange}
+                required={true}
+              />
+            </div>
+            <div className="col-lg-12 col-sm-12">
+              <InputValues
+                type="text"
+                className="form-control"
+                placeholder="wysokość"
+                aria-label="wysokość"
+                name="wysokosc_ladunku"
+                value={values["wysokosc_ladunku"]}
+                onChange={onChange}
+                required={true}
+              />
+              <div className="col-lg-12  my-2 col-sm-12">
+                <label className="form-label" htmlFor="">
+                  W przypadku maszyn:
+                </label>
+                <InputValues
+                  type="text"
+                  className="form-control"
+                  placeholder="model i rok produkcji"
+                  aria-label="model i rok produkcji"
+                  name="model_rok_produkcji"
+                  required={false}
+                />
+                <div className="form-floating">
+                  <textarea
+                    className="form-control"
+                    placeholder="Dodaj opis"
+                    aria-label="Dodaj opis"
+                    name="opis"
+                    id="floatingTextarea"
+                    style={{ height: "93px" }}
+                  ></textarea>
+                  <label
+                    htmlFor="floatingTextarea"
+                    style={{ color: "#212529" }}
+                  >
+                    Dodatkowy opis
+                  </label>
+                </div>
+              </div>
+            </div>
+            <label htmlFor="" className="form-label text-center">
+              Dane kontaktowe dla spedytora
+            </label>
+            <div className="col-lg-12 col-sm-12 mb-1">
+              <InputValues
+                type="text"
+                className="form-control"
+                placeholder="Imię i nazwisko"
+                aria-label="Imię i nazwisko"
+                name="user_name"
+                value={values["nazwa_uzytkownika"]}
+                onChange={onChange}
+                required={true}
+              />
+            </div>
+            <div className="col-lg-12 col-sm-12 mb-1">
+              <InputValues
+                type="text"
+                className="form-control"
+                placeholder="Email 📧"
+                aria-label="Email"
+                name="user_email"
+                value={values["user_email"]}
+                onChange={onChange}
+                errorMessage="Brak @ w emailu"
+                required={true}
+                focused={focused["user_email"].toString()}
+                onBlur={handleFocus}
+                pattern="^\S+@\S+$"
+              />
+            </div>
+            <div className="col-lg-12 col-d-12 mb-1">
+              <InputValues
+                type="text"
+                className="form-control"
+                placeholder="Telefon 📞"
+                aria-label="Telefon"
+                name="user_phone"
+                value={values["telefon"]}
+                onChange={onChange}
+                errorMessage="Numer telefonu składa się tylko z 9 liczb"
+                required={true}
+                focused={focused["user_phone"].toString()}
+                onBlur={handleFocus}
+                pattern="(\d[\s-]*){8,8}\d"
+              />
             </div>
           </div>
         </div>
-        <div className="row mx-5 justify-content-center">
-          <label htmlFor="" className="form-label text-center">
-            Dane kontaktowe dla spedytora
-          </label>
-          <div className="col-lg-2 col-sm-12 mb-1">
-            <InputValues
-              type="text"
-              className="form-control"
-              placeholder="Imię i nazwisko"
-              aria-label="Imię i nazwisko"
-              name="user_name"
-              value={values["nazwa_uzytkownika"]}
-              onChange={onChange}
-              required={true}
-            />
-          </div>
-          <div className="col-lg-2 col-sm-12 mb-1">
-            <InputValues
-              type="text"
-              className="form-control"
-              placeholder="Email 📧"
-              aria-label="Email"
-              name="user_email"
-              value={values["user_email"]}
-              onChange={onChange}
-              errorMessage="Brak @ w emailu"
-              required={true}
-              focused={focused["user_email"].toString()}
-              onBlur={handleFocus}
-              pattern="^\S+@\S+$"
-            />
-          </div>
-          <div className="col-lg-2 col-sm-12 mb-1">
-            <InputValues
-              type="text"
-              className="form-control"
-              placeholder="Telefon 📞"
-              aria-label="Telefon"
-              name="user_phone"
-              value={values["telefon"]}
-              onChange={onChange}
-              errorMessage="Numer telefonu składa się tylko z 9 liczb"
-              required={true}
-              focused={focused["user_phone"].toString()}
-              onBlur={handleFocus}
-              pattern="(\d[\s-]*){8,8}\d"
-            />
-          </div>
-        {errorSend ? (
-          <div className="bg-danger text-center col-12">
-            <b>COŚ POSZŁO NIE TAK, SPRÓBUJ JESZCZE RAZ 😥</b>
-          </div>
-        ) : (
-          ""
-        )}
-        {passSend ? (
-          <div className="bg-success text-center col-12">
-            Wiadomość trafiła we właściwe ręce 😎
-          </div>
-        ) : (
-          ""
-        )}
-        </div>
         <div className="justify-content-center d-flex">
-        <button
-          type="submit"
-          className="btn btn-warning col-lg-3 col-md-6 mb-4 mx-md-3 col-sm-12 "
-        >
-          <b>Prośba o wycenę transportu</b>
-        </button>
-        </div>
+            <button
+              type="submit"
+              className="btn btn-warning col-lg-3 col-md-6 mb-4 mx-md-3 col-sm-12 "
+            >
+              <b>Prośba o wycenę transportu</b>
+            </button>
+          </div>
       </form>
     </div>
   );

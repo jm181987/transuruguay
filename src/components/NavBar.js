@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaTimes } from "react-icons/fa";
-import logo from "./logo-beztla_z.png";
+import logo from "./media/logo-beztla_z.png";
 const NavBar = (onClick) => {
   const getWindowSize = () => {
     const { innerWidth, innerHeight } = window;
@@ -24,11 +24,11 @@ const NavBar = (onClick) => {
 
   return (
     <>
-      <a href="/#" className="navbar-brand">
+      <nav className="navbar navbar-expand  m-0 p-0 navbar-absolute">
+        <div className="container-fluid">
+      <a href="/#" className="navbar-brand" style={{marginLeft:"6rem", marginTop:"-15px"}}>
         <img src={logo} alt="" className="icona" />
       </a>
-      <nav className="navbar navbar-expand py-3 navbar-absolute">
-        <div className="container-fluid">
           {/* LOGO ICON*/}
           {windowSize.innerWidth < 960 ? (
             <GiHamburgerMenu
@@ -36,7 +36,7 @@ const NavBar = (onClick) => {
               onClick={() => setShowNavBar(!showNavBar)}
             />
           ) : (
-            <ul className="navbar-nav">
+            <ul className="navbar-nav" style={{marginRight:"6rem"}}>
               <li className="nav-item">
                 <a href="#section0" className="nav-link">
                   <h5>Home</h5>

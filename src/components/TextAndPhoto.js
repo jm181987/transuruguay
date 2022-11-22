@@ -1,8 +1,9 @@
 // import chlodniabeztla from "./chlodniabeztla.png";
-import beztla1 from "./beztla1.png"
-import beztla2 from "./beztla2.png"
-import beztla3 from "./beztla3.png"
-import bez_tla_wieksze from "./bez_tla_wieksze.png"
+import beztla1 from "./media/beztla1.png"
+import beztla2 from "./media/beztla2.png"
+import beztla3 from "./media/beztla3.png"
+import beztla5 from "./media/beztla5.png"
+import bez_tla_wieksze from "./media/bez_tla_wieksze.png"
 const TextaAndPhoto = () => {
   return (
     <div
@@ -33,7 +34,7 @@ const TextaAndPhoto = () => {
       </div>
       <div className="col-lg-6 col-sm-12 text-center m-0">
         <img
-          src={bez_tla_wieksze}
+          src={beztla5}
           alt=""
           className="img-fluid "
           decoding="async"

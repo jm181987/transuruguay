@@ -1,4 +1,4 @@
-import time from "./star.mp4";
+import time from "./media/star.mp4";
 import { AiOutlineArrowDown } from "react-icons/ai";
 const Video = () => {
   // const removeHash =() => {
