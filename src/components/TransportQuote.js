@@ -81,9 +81,9 @@ const TransportQuote = () => {
   const [errorSend, setErrorSend] = useState(false);
   const [passSend, setPassSend] = useState(false);
   return (
-    <div className="row" style={{ backgroundColor: "rgb(27, 20, 100" }}>
+    <div className="row r" style={{ backgroundColor: "rgb(27, 20, 100" }}>
       <form ref={form} onSubmit={sendEmail}>
-        <div className="row  mx-4 mt-2" id="section5">
+        <div className="row  mx-5 mt-2" id="section5">
           <h2 className="text-center p-3">WYCENA TRANSPORTU</h2>
           {/* ZAŁADUNEK */}
           <div className="col-lg-6 col-sm-12">
@@ -206,7 +206,7 @@ const TransportQuote = () => {
           </div>
         </div>
         {/* wymiary ładunku */}
-        <div className="row mx-4">
+        <div className="row mx-5">
           <label htmlFor="" className="form-label">
             Wymairy ładunku
           </label>
@@ -249,7 +249,7 @@ const TransportQuote = () => {
             />
           </div>
         </div>
-        <div className="row mx-4">
+        <div className="row mx-5">
           <div className="col-12  my-2">
             <label className="form-label" htmlFor="">
               W przypadku maszyn:
@@ -276,75 +276,75 @@ const TransportQuote = () => {
               </label>
             </div>
           </div>
-          <div className="row mb-2">
-            <label htmlFor="" className="form-label">
-              Dane kontaktowe dla spedytora
-            </label>
-            <div className="col-lg-4 col-sm-12 mb-3">
-              <InputValues
-                type="text"
-                className="form-control"
-                placeholder="Imię i nazwisko"
-                aria-label="Imię i nazwisko"
-                name="user_name"
-                value={values["nazwa_uzytkownika"]}
-                onChange={onChange}
-                required={true}
-              />
-            </div>
-            <div className="col-lg-4 col-sm-12 mb-3">
-              <InputValues
-                type="text"
-                className="form-control"
-                placeholder="Email 📧"
-                aria-label="Email"
-                name="user_email"
-                value={values["user_email"]}
-                onChange={onChange}
-                errorMessage="Brak @ w emailu"
-                required={true}
-                focused={focused["user_email"].toString()}
-                onBlur={handleFocus}
-                pattern="^\S+@\S+$"
-              />
-            </div>
-            <div className="col-lg-4 col-sm-12 mb-3">
-              <InputValues
-                type="text"
-                className="form-control"
-                placeholder="Telefon 📞"
-                aria-label="Telefon"
-                name="user_phone"
-                value={values["telefon"]}
-                onChange={onChange}
-                errorMessage="Numer telefonu składa się tylko z 9 liczb"
-                required={true}
-                focused={focused["user_phone"].toString()}
-                onBlur={handleFocus}
-                pattern="(\d[\s-]*){8,8}\d"
-              />
-            </div>
+        </div>
+        <div className="row mx-5">
+          <label htmlFor="" className="form-label">
+            Dane kontaktowe dla spedytora
+          </label>
+          <div className="col-lg-4 col-sm-12 mb-1">
+            <InputValues
+              type="text"
+              className="form-control"
+              placeholder="Imię i nazwisko"
+              aria-label="Imię i nazwisko"
+              name="user_name"
+              value={values["nazwa_uzytkownika"]}
+              onChange={onChange}
+              required={true}
+            />
+          </div>
+          <div className="col-lg-4 col-sm-12 mb-1">
+            <InputValues
+              type="text"
+              className="form-control"
+              placeholder="Email 📧"
+              aria-label="Email"
+              name="user_email"
+              value={values["user_email"]}
+              onChange={onChange}
+              errorMessage="Brak @ w emailu"
+              required={true}
+              focused={focused["user_email"].toString()}
+              onBlur={handleFocus}
+              pattern="^\S+@\S+$"
+            />
+          </div>
+          <div className="col-lg-4 col-sm-12 mb-1">
+            <InputValues
+              type="text"
+              className="form-control"
+              placeholder="Telefon 📞"
+              aria-label="Telefon"
+              name="user_phone"
+              value={values["telefon"]}
+              onChange={onChange}
+              errorMessage="Numer telefonu składa się tylko z 9 liczb"
+              required={true}
+              focused={focused["user_phone"].toString()}
+              onBlur={handleFocus}
+              pattern="(\d[\s-]*){8,8}\d"
+            />
           </div>
           <button
-            type="submit"
-            className="btn btn-warning col-lg-3 col-md-6 mb-4 mx-md-3 col-sm-12"
-          >
-            <b>Prośba o wycenę transportu</b>
-          </button>
-          {errorSend ? (
-            <div className="bg-danger text-center col-12">
-              <b>COŚ POSZŁO NIE TAK, SPRÓBUJ JESZCZE RAZ 😥</b>
-            </div>
-          ) : (
-            ""
-          )}
-          {passSend ? (
-            <div className="bg-success text-center col-12">
-              Wiadomość trafiła we właściwe ręce 😎
-            </div>
-          ) : (
-            ""
-          )}
+          type="submit"
+          className="btn btn-warning col-lg-3 col-md-6 mb-4 mx-md-3 col-sm-12"
+        >
+          <b>Prośba o wycenę transportu</b>
+        </button>
+        {errorSend ? (
+          <div className="bg-danger text-center col-12">
+            <b>COŚ POSZŁO NIE TAK, SPRÓBUJ JESZCZE RAZ 😥</b>
+          </div>
+        ) : (
+          ""
+        )}
+        {passSend ? (
+          <div className="bg-success text-center col-12">
+            Wiadomość trafiła we właściwe ręce 😎
+          </div>
+        ) : (
+          ""
+        )}
         </div>
       </form>
     </div>

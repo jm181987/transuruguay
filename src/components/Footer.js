@@ -14,10 +14,12 @@ const Footer = () => {
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-        <div className="fs-6 fw-bold mt-4 mb-2">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo,
-          voluptatum id quo in recusandae quam.
-        </div>
+      <div className="fs-6 fw-bold mt-4 mb-2">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo,
+        voluptatum id quo in recusandae quam.
+      </div>
+      </div>
+      <div className="row text-center">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ex
         natus ratione eius est, mollitia ipsa iste dicta temporibus veritatis!
         Sequi excepturi ipsa harum quos, cupiditate quisquam laboriosam

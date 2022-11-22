@@ -32,11 +32,7 @@ const Forms = () => {
   const [showError, setshowError] = useState(false);
   const [showPass, setshowPass] = useState(false);
   return (
-    <div
-      className="row"
-      id="section6"
-      style={{ backgroundColor: "rgb(51,52,51)" }}
-    >
+    <div className="row" id="section6" style={{ backgroundColor: "#443E7D" }}>
       <div className="col-12 text-center fw-bold mt-5 fs-1">
         BĄDZMY W KONTAKCIE
       </div>
@@ -55,7 +51,7 @@ const Forms = () => {
         ""
       )}
       <div className="row justify-content-center ">
-        <div className="col-lg-7 col-md-12 mx-lg-3 mb-3">
+        <div className="col-lg-5 col-md-12 mx-lg-3 mb-3">
           <form ref={form} onSubmit={sendEmail}>
             <div className="mb-3">
               <label htmlFor="user_name" className="form-label">
