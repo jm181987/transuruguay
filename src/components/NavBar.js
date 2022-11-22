@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaTimes } from "react-icons/fa";
-import logo from "./logo-beztla.png";
+import logo from "./logo-beztla_z.png";
 const NavBar = (onClick) => {
   const getWindowSize = () => {
     const { innerWidth, innerHeight } = window;

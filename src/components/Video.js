@@ -20,7 +20,7 @@ const Video = () => {
         <h1 id="title-comapny">MARPOL</h1>
         <h2 id="title-comapny-next">Przedsiębiorstwo Handlowo-Usługowe</h2>
         <h3 id="text-after-title" className="mx-5">
-        Firma PHU Marpol Mariusz Michalicki rozpoczęła działalność w sektorze transportowym w roku 1997
+        Zajmujemy się transportem krajowym oraz międzynarodowym
 
         </h3>
         <br />

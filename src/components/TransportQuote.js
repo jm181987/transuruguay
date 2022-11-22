@@ -181,7 +181,7 @@ const TransportQuote = () => {
               }}
             />
           </div>
-          <div className="col-8  my-2">
+          <div className="col-lg-8  my-2 col-sm-12">
             <label className="form-label" htmlFor="">
               lub przybliżona data załadunku (za miesiąc, za tydzień etc.)
             </label>
@@ -250,7 +250,7 @@ const TransportQuote = () => {
           </div>
         </div>
         <div className="row mx-5 justify-content-center">
-          <div className="col-8  my-2">
+          <div className="col-lg-8  my-2 col-sm-12">
             <label className="form-label" htmlFor="">
               W przypadku maszyn:
             </label>

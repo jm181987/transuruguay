@@ -12,19 +12,19 @@ const Gallery = () => {
       <div className="mt-5 col-md-4 col-sm-12 text-center black-and-white text-dark">
         <img className="img-fluid img-gallery" src={choldnica1} alt="" />
         <div className="describe-truck  mb-3">
-          <b>LOREM</b>
+          <b>CHŁODNIE</b>
         </div>
       </div>
       <div className="mt-5 col-md-4 col-sm-12 text-center black-and-white  text-dark">
         <img className="img-fluid img-gallery" src={galeria2} alt="" />
         <div className="describe-truck  mb-3">
-          <b>LOREM</b>
+          <b>PLANDEKI</b>
         </div>
       </div>
       <div className="mt-5 col-md-4 col-sm-12 text-center black-and-white  text-dark">
         <img className="img-fluid img-gallery" src={galeria3} alt="" />
         <div className=" describe-truck mb-3">
-          <b>LOREM</b>
+          <b>KONTENERY</b>
         </div>
       </div>
     </div>

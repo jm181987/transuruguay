@@ -5,7 +5,15 @@
   top: 15px;
   right: 35px;
   }
+  /* .icona {
+    height: 100px;
+    width: 150px;
+    position: absolute;
+    top:54.5% !important;
+    left:10% !important;
+  } */
 }
+
 @media (max-width: 450px) {
   .transport-text {
     font-size: calc(3.0em + .9vw) !important;
@@ -23,6 +31,9 @@
   .coop-title{
     font-size: 3.5rem !important;
   }
+}
+@media screen and (min-height: 450px) {
+  
 }
 body {
   background-color: black;
@@ -84,6 +95,7 @@ body {
     position: relative;
     width: 100%;
     min-height: 100vh;
+    /* filter: brightness(50%) */
   }
 .caption {
   position: absolute;
