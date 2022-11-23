@@ -62,11 +62,11 @@ const NavBar = (onClick) => {
                   <h5>Współpraca</h5>
                 </a>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <a href="#section5" className="nav-link">
                   <h5>Wycena</h5>
                 </a>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <a href="#section6" className="nav-link">
                   <h5>Kontakt</h5>
@@ -149,9 +149,9 @@ const NavBar = (onClick) => {
                 <a href="#section4" onClick={() => setShowNavBar(false)}>
                   Współpraca
                 </a>
-                <a href="/#section5" onClick={() => setShowNavBar(false)}>
+                {/* <a href="/#section5" onClick={() => setShowNavBar(false)}>
                   Wycena
-                </a>
+                </a> */}
                 <a href="/#section6" onClick={() => setShowNavBar(false)}>
                   Kontakt
                 </a>

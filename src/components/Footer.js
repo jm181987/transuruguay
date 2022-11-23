@@ -50,10 +50,10 @@ const Footer = () => {
                 <a href="#section4"> Współpraca</a>
               </li>
               |
-              <li className="nav-item px-2">
+              {/* <li className="nav-item px-2">
                 {" "}
                 <a href="#section5"> Wycena</a>
-              </li>
+              </li> */}
               |
               <li className="nav-item px-2">
                 {" "}

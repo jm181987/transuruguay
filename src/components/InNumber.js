@@ -2,7 +2,7 @@ const InNumber = () => {
   return (
     <div className="row" style={{ backgroundColor: "#FFC800" }}>
       <div className="col-12 text-center mt-5 text-dark">
-        <div className="fw-bold fs-1">MAC-TRANS W LICZBCH</div>
+        <div className="fw-bold fs-1">MARPOL W LICZBCH</div>
         <div className="fs-4">
           Jesteśmy zespołem nastawionym na rozwój. Każdego dnia podejmujemy
           działania dzięki którym dążymy do perfekcji.

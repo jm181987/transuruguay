@@ -20,10 +20,10 @@ const TextaAndPhoto = () => {
             // lineHeight: "30px",
           }}
         >
-          TANSPORT ŻYWNOŚCI
+          TANSPORT 
         </div>
         <div className="transport-text" style={{color:'black'}}>
-          CHŁODNIE
+          TOWAROWY
         </div>
         <h4 style={{ textAlign: "justify", color:'#383838'}}>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci
