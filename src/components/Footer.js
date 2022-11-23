@@ -37,7 +37,7 @@ const Footer = () => {
               |
               <li className="nav-item px-1">
                 {" "}
-                <a href="#section2"> NACZEPY</a>
+                <a href="#section2"> Naczepy</a>
               </li>
               |
               <li className="nav-item px-1">
