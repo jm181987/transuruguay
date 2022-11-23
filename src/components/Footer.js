@@ -21,8 +21,8 @@ const Footer = () => {
         </div>
         <div className="col-12 d-lg-flex text-sm-center">
           <div className="col-lg-6 col-md-12 p-lg-3 font-footer py-md-3">
-            2022 © COPYRIGHT BY MARPOL SP. Z O. O. SP. K. POWERED BY: JAKUB
-            STĘPNIK
+            2022 © COPYRIGHT BY MARPOL SP. Z O. O. SP. K. POWERED BY: <a href="https://github.com/S1hredder/" >JAKUB
+            STĘPNIK</a>
           </div>
           <div className="col-lg-6 col-md-12 d-lg-flex justify-content-lg-end p-lg-3 font-footer">
             <ul className="nav justify-content-center">

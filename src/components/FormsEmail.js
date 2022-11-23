@@ -51,7 +51,7 @@ const Forms = () => {
         ""
       )}
       <div className="row ">
-        <div className="col-lg-6 col-md-12 map-responsive m-3">
+        <div className="col-lg-6 col-md-12 map-responsive m-lg-3">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1021.0095103875435!2d16.750266578062792!3d52.50839755934989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4704405c79fab24d%3A0x9bfe31c8e6591d78!2sRolna%2015A%2C%2062-090%20Rokietnica!5e0!3m2!1spl!2spl!4v1668842427492!5m2!1spl!2spl"
             width="100vw"
@@ -62,7 +62,7 @@ const Forms = () => {
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-        <div className="col-lg-3 col-md-12 mx-lg-3 m-3">
+        <div className="col-lg-3 col-md-12 mx-lg-3 my-lg-3">
           <form ref={form} onSubmit={sendEmail}>
             <div className="mb-3">
               <label htmlFor="user_name" className="form-label">
@@ -133,7 +133,7 @@ const Forms = () => {
             </div>
           </form>
         </div>
-        <div className="col-lg-2 col-12 justify-content-center text-center mt-lg-5 m-3 mt-0">
+        <div className="col-lg-2 col-12 justify-content-center text-center  my-lg-3 mt-0">
           <BiBuilding className="fs-1 mt-5" style={{ color: "#FFC107" }} />
           <p>
             Rolna 15A 62-090 Rokietnica
@@ -144,7 +144,7 @@ const Forms = () => {
           </p>
           <FaPhone className="fs-1" style={{ color: "#FFC107" }} />
           <p>(+48) 618 145 376</p>
-          <CiMail className="fs-1" style={{ color: "#FFC107" }} />
+          <CiMail className="fs-1 text-wrap" style={{ color: "#FFC107" }} />
           <p>mariuszmichalicki@o2.pl</p>
         </div>
       </div>

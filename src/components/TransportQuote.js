@@ -84,10 +84,10 @@ const TransportQuote = () => {
     <div className="row" style={{ backgroundColor: "rgb(27, 20, 100" }}>
       <form ref={form} onSubmit={sendEmail}>
         <div className="row mx-5 mt-2" id="section5">
-          <h2 className="text-center p-3">WYCENA TRANSPORTU</h2>
+          <h2 className="text-center p-3 fw-bold">WYCENA TRANSPORTU</h2>
           {/* ZAŁADUNEK */}
           <div className="col-lg-6 col-sm-12">
-            <label className="form-label" htmlFor="">
+            <label className="form-label fs-4" htmlFor="">
               Załadunek
             </label>
             <SelectCountry
@@ -134,7 +134,7 @@ const TransportQuote = () => {
             />
             <br />
             {/* ROZŁADUNEK */}
-            <label className="form-label mt-3" htmlFor="">
+            <label className="form-label mt-3 fs-4" htmlFor="">
               Rozładunek
             </label>
             <SelectCountry
@@ -158,7 +158,7 @@ const TransportQuote = () => {
             <br />
             <DatePicker
               onChange={setDate}
-              className="bg-dark"
+              className="bg-light"
               inputClass="form-control"
               placeholder="Wybierz date 📅 "
               aria-label="Wybierz date"
@@ -169,10 +169,10 @@ const TransportQuote = () => {
               mapDays={({ date, today, isSameDate }) => {
                 let props = {};
 
-                props.style = { color: "#c4c7ca" };
+                props.style = { color: "black" };
 
                 if (isSameDate(date, today)) {
-                  props.style.backgroundColor = "rgb(255, 200, 0)";
+                  props.style.backgroundColor = "#DDDDD";
                   props.style.color = "black";
                 }
 
@@ -180,7 +180,7 @@ const TransportQuote = () => {
               }}
             />
             <br />
-            <label className="form-label my-3" htmlFor="">
+            <label className="form-label my-3 " htmlFor="">
               lub przybliżona data załadunku (za miesiąc, za tydzień etc.)
             </label>
             <InputValues
@@ -205,7 +205,7 @@ const TransportQuote = () => {
           {/* wymiary ładunku */}
           {/* <div className="row mx-5 justify-content-center"> */}
           <div className="col-lg-6 col-sm-12">
-            <label htmlFor="" className="form-label text-center">
+            <label htmlFor="" className="form-label fs-4">
               Wymairy ładunku
             </label>
             <div className="col-lg-12 col-sm-12">
@@ -275,7 +275,11 @@ const TransportQuote = () => {
                 </div>
               </div>
             </div>
-            <label htmlFor="" className="form-label text-center">
+            <label
+              htmlFor=""
+              className="form-label text-center fs-4"
+              style={{ marginTop: "5.5px" }}
+            >
               Dane kontaktowe dla spedytora
             </label>
             <div className="col-lg-12 col-sm-12 mb-1">
@@ -325,13 +329,27 @@ const TransportQuote = () => {
           </div>
         </div>
         <div className="justify-content-center d-flex">
-            <button
-              type="submit"
-              className="btn btn-warning col-lg-3 col-md-6 mb-4 mx-md-3 col-sm-12 "
-            >
-              <b>Prośba o wycenę transportu</b>
-            </button>
+          <button
+            type="submit"
+            className="btn btn-warning col-lg-3 col-md-6 mb-4 mx-md-3 col-sm-12 "
+          >
+            <b>Prośba o wycenę transportu</b>
+          </button>
+        </div>
+        {errorSend ? (
+          <div className="row">
+            <div className="bg-danger text-center col-12">
+              <b>COŚ POSZŁO NIE TAK, SPRÓBUJ JESZCZE RAZ 😥</b>{" "}
+            </div>{" "}
           </div>
+        ) : null}
+        {passSend ? (
+          <div className="row">
+            <div className="bg-success text-center col-12">
+              <b>Wiadomość trafiła we właściwe ręce 😎</b>{" "}
+            </div>{" "}
+          </div>
+        ) : null}
       </form>
     </div>
   );

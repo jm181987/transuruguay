@@ -26,7 +26,7 @@ const NavBar = (onClick) => {
     <>
       <nav className="navbar navbar-expand  m-0 p-0 navbar-absolute">
         <div className="container-fluid">
-      <a href="/#" className="navbar-brand" style={{marginLeft:"5.7rem", paddingBottom:"15px"}}>
+      <a href="/#" className="navbar-brand navbar-margin-left" style={{ paddingBottom:"15px"}}>
         <img src={logo} alt="" className="icona" />
       </a>
           {/* {windowSize.innerWidth} */}
@@ -36,7 +36,7 @@ const NavBar = (onClick) => {
               onClick={() => setShowNavBar(!showNavBar)}
             />
           ) : (
-            <ul className="navbar-nav" style={{marginRight:"5.7rem"}}>
+            <ul className="navbar-nav navbar-margin-right">
               <li className="nav-item">
                 <a href="#section0" className="nav-link">
                   <h5>Home</h5>
