@@ -5,7 +5,7 @@ const navTop = () => {
         <ul className="navbar-nav">
           <li className="nav-item">
             <a href="tel:+6494461709" className="nav-link">
-              <span className="phone-icon">(+48) 618 145 376</span>
+              <span className="phone-icon">(+48) 787 121 488</span>
             </a>
           </li>
           <li className="nav-item">

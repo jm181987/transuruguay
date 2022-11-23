@@ -144,7 +144,7 @@ const Forms = () => {
             PL REGON: 630836009
           </p>
           <FaPhone className="fs-1" style={{ color: "#FFC107" }} />
-          <p>(+48) 618 145 376</p>
+          <p>(+48) 787 121 488</p>
           <CiMail className="fs-1 text-wrap" style={{ color: "#FFC107" }} />
           <p>mariuszmichalicki@o2.pl</p>
         </div>
