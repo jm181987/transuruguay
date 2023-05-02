@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaTimes } from "react-icons/fa";
-import logo from "./media/logo-beztla_z.png";
+import logo from "./media/transuruguay.jpg";
 const NavBar = (onClick) => {
   const getWindowSize = () => {
     const { innerWidth, innerHeight } = window;
@@ -138,74 +138,23 @@ const NavBar = (onClick) => {
                   Home
                 </a>
                 <a href="#section1" onClick={() => setShowNavBar(false)}>
-                  O nas
+                Sobre nosotros
                 </a>
                 <a href="#section2" onClick={() => setShowNavBar(false)}>
-                  Naczepy{" "}
+                  Nuestra flota{" "}
                 </a>
-                <a href="#section3" onClick={() => setShowNavBar(false)}>
-                  Nasz Tabor
-                </a>
+                
                 <a href="#section4" onClick={() => setShowNavBar(false)}>
-                  Współpraca
+                  Administraciòn
                 </a>
                 {/* <a href="/#section5" onClick={() => setShowNavBar(false)}>
                   Wycena
                 </a> */}
                 <a href="/#section6" onClick={() => setShowNavBar(false)}>
-                  Kontakt
+                  Contacto
                 </a>
-                <a href="/#">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="27"
-                    height="27"
-                    viewBox="0 0 8 5"
-                  >
-                    <rect width="8" height="5" fill="#dc143c" />
-                    <rect width="8" height="2.5" fill="#fff" />
-                  </svg>
-                </a>
-                <a href="/#">
-                  {" "}
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 60 30"
-                    width="27"
-                    height="27"
-                  >
-                    <clipPath id="s">
-                      <path d="M0,0 v30 h60 v-30 z" />
-                    </clipPath>
-                    <clipPath id="t">
-                      <path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z" />
-                    </clipPath>
-                    <g clipPath="url(#s)">
-                      <path d="M0,0 v30 h60 v-30 z" fill="#012169" />
-                      <path
-                        d="M0,0 L60,30 M60,0 L0,30"
-                        stroke="#fff"
-                        strokeWidth="6"
-                      />
-                      <path
-                        d="M0,0 L60,30 M60,0 L0,30"
-                        clipPath="url(#t)"
-                        stroke="#C8102E"
-                        strokeWidth="4"
-                      />
-                      <path
-                        d="M30,0 v30 M0,15 h60"
-                        stroke="#fff"
-                        strokeWidth="10"
-                      />
-                      <path
-                        d="M30,0 v30 M0,15 h60"
-                        stroke="#C8102E"
-                        strokeWidth="6"
-                      />
-                    </g>
-                  </svg>
-                </a>
+                
+                
               </div>
             </div>
           ) : (

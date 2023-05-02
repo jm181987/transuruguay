@@ -18,10 +18,9 @@ const Video = () => {
         </div>
       </div>
       <div className="caption text-center">
-        <h1 id="title-comapny">MARPOL</h1>
-        <h2 id="title-comapny-next">Przedsiębiorstwo Handlowo-Usługowe</h2>
+        <h1 id="title-comapny">TRANSURUGUAY</h1>
+        <h2 id="title-comapny-next">Transporte Nacional e Internacional</h2>
         <h3 id="text-after-title" className="mx-5">
-        Zajmujemy się transportem krajowym oraz międzynarodowym
 
         </h3>
         <br />

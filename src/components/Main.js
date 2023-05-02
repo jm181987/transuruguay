@@ -13,13 +13,13 @@ const Main = () => {
     <>
       <Video />
       <Text />
-      <Gallery />
-      <WorkingOn />
       <TextAndPhoto />
       <TextAndPhoto2 />
+      <WorkingOn />
+      
+     
       <InNumber />
       <Cooperation />
-      {/* <TransportQuote /> */}
       <FormsEmail />
     </>
   );

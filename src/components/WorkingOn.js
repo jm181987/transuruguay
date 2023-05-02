@@ -5,20 +5,20 @@ const WorkingOn = () => {
   return (
     <div className="row" id="section2" style={{ backgroundColor: "#1b1464" }}>
       <div className="col-12 text-center mb-3 mt-5">
-        <div className="text-center fw-bold fs-1">NASZA FLOTA NACZEP:</div>
+        <div className="text-center fw-bold fs-1">Nuestra flota:</div>
       </div>
       <div className="col-lg m-lg-5 px-lg-5 py-5 my-5 text-center border border-light mt-lg-3">
         <button className="btn rounded-circle btn-warning btn-lg  mb-2 icon-do text-dark">
-          <FaTemperatureHigh />
+        <RiTruckFill />
         </button>
-        <h4>Transport chłodniczy</h4>
+        <h4>Transporte de containers</h4>
       </div>
 
       <div className="col-lg m-lg-5 px-lg-5 py-5 my-5 text-center border border-light mt-lg-3">
         <button className="btn rounded-circle btn-warning btn-lg  mb-2 icon-do text-dark">
           <RiTruckFill />
         </button>
-        <h4>Załadunek koffer/plandeką</h4>
+        <h4>Cargas convencionales hasta 28 toneladas</h4>
       </div>
       <div className="col-lg m-lg-5 px-lg-5 py-5 my-5 text-center border border-light mt-lg-3">
         <button className="btn rounded-circle btn-warning btn-lg  mb-2 icon-do text-dark">
@@ -92,7 +92,7 @@ const WorkingOn = () => {
             <g></g>
           </svg>
         </button>
-        <h4>Transport firanka</h4>
+        <h4>Transportes con dimensiones y pesos especiales</h4>
       </div>
     </div>
   );

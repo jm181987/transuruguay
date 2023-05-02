@@ -7,20 +7,20 @@ import InputValues from "./InputValues";
 import SelectCountry from "./SelectCountry";
 const TransportQuote = () => {
   const [date, setDate] = useState(new Date());
-  const weekDays = ["Pon", "Wt", "Śr", "Czw", "Pt", "Sob", "Nied"];
+  const weekDays = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"];
   const months = [
-    "Styczeń",
-    "Luty",
-    "Marzec",
-    "Kwiecień",
-    "Maj",
-    "Czerwiec",
-    "Lipiec",
-    "Sierpień",
-    "Wrzesień",
-    "Październik",
-    "Listopad",
-    "Grudzień",
+    "Enero",
+    "Febrero",
+    "Marzo",
+    "Abril",
+    "Mayo",
+    "Junio",
+    "Julio",
+    "Agosto",
+    "Setiembre",
+    "Octubre",
+    "Noviembre",
+    "Diciembre",
   ];
 
   const form = useRef();
@@ -51,16 +51,16 @@ const TransportQuote = () => {
   };
 
   const [values, setValues] = useState({
-    kraj_zaladunku: "",
-    kod_pocztowy_zaladunku: "",
-    data_zaladunku: "",
-    kraj_rozladunku: "",
-    kod_pocztowy_rozladunku: "",
-    data_rozladunku: "",
-    waga_ladunku: "",
-    dlugosc_ladunku: "",
-    szerokosc_ladunku: "",
-    wysokosc_ladunku: "",
+    cargando_país: "",
+     cargando_código_postal: "",
+     fecha_de_carga: "",
+     país_descarga: "",
+     código_postal_de_descarga: "",
+     fecha_de_descarga: "",
+     peso_carga: "",
+     longitud_carga: "",
+     ancho_de_carga: "",
+     altura_de_carga: "",
     user_name: "",
     user_email: "",
     user_phone: "",
@@ -84,16 +84,16 @@ const TransportQuote = () => {
     <div className="row" style={{ backgroundColor: "rgb(27, 20, 100" }}>
       <form ref={form} onSubmit={sendEmail}>
         <div className="row mx-5 mt-2" id="section5">
-          <h2 className="text-center p-3 fw-bold">WYCENA TRANSPORTU</h2>
+          <h2 className="text-center p-3 fw-bold">Cotize su transporte</h2>
           {/* ZAŁADUNEK */}
           <div className="col-lg-6 col-sm-12">
             <label className="form-label fs-4" htmlFor="">
-              Załadunek
+              País donde carga:
             </label>
             <SelectCountry
-              aria-label="Kraj załadunku"
-              name="kraj_zaladunku"
-              value={values["kraj_zaladunku"]}
+              aria-label="País de carga"
+              name="País de carga"
+              value={values["País de carga"]}
               setValues={setValues}
               onChange={onChange}
               required={true}
@@ -113,9 +113,9 @@ const TransportQuote = () => {
             <DatePicker
               className="bg-light"
               inputClass="form-control"
-              placeholder="Wybierz date 📅 "
-              aria-label="Wybierz date"
-              name="data_zaladunku"
+              placeholder="Fecha  📅 "
+              aria-label="Fecha"
+              name="Fecha"
               weekDays={weekDays}
               format="DD/MM/YYYY"
               months={months}
@@ -135,7 +135,7 @@ const TransportQuote = () => {
             <br />
             {/* ROZŁADUNEK */}
             <label className="form-label mt-3 fs-4" htmlFor="">
-              Rozładunek
+            Descarga
             </label>
             <SelectCountry
               aria-label="Kraj załadunku"
@@ -181,8 +181,7 @@ const TransportQuote = () => {
             />
             <br />
             <label className="form-label my-3 " htmlFor="">
-              lub przybliżona data załadunku (za miesiąc, za tydzień etc.)
-            </label>
+            Fecha aproximada de carga (en un mes, en una semana, etc.)            </label>
             <InputValues
               type="text"
               className="form-control"
@@ -206,8 +205,7 @@ const TransportQuote = () => {
           {/* <div className="row mx-5 justify-content-center"> */}
           <div className="col-lg-6 col-sm-12">
             <label htmlFor="" className="form-label fs-4">
-              Wymairy ładunku
-            </label>
+            Dimensiones de la carga            </label>
             <div className="col-lg-12 col-sm-12">
               {" "}
               <InputValues
@@ -247,8 +245,7 @@ const TransportQuote = () => {
               />
               <div className="col-lg-12  my-2 col-sm-12">
                 <label className="form-label" htmlFor="">
-                  W przypadku maszyn:
-                </label>
+Para Maquinas                </label>
                 <InputValues
                   type="text"
                   className="form-control"
@@ -270,7 +267,7 @@ const TransportQuote = () => {
                     htmlFor="floatingTextarea"
                     style={{ color: "#212529" }}
                   >
-                    Dodatkowy opis
+                 Descripción adicional
                   </label>
                 </div>
               </div>
@@ -280,8 +277,7 @@ const TransportQuote = () => {
               className="form-label text-center fs-4"
               style={{ marginTop: "5.5px" }}
             >
-              Dane kontaktowe dla spedytora
-            </label>
+Datos de Contacto:            </label>
             <div className="col-lg-12 col-sm-12 mb-1">
               <InputValues
                 type="text"
@@ -333,20 +329,20 @@ const TransportQuote = () => {
             type="submit"
             className="btn btn-warning col-lg-3 col-md-6 mb-4 mx-md-3 col-sm-12 "
           >
-            <b>Prośba o wycenę transportu</b>
+            <b>Solicitud de presupuesto de transporte</b>
           </button>
         </div>
         {errorSend ? (
           <div className="row">
             <div className="bg-danger text-center col-12">
-              <b>COŚ POSZŁO NIE TAK, SPRÓBUJ JESZCZE RAZ 😥</b>{" "}
+              <b>ALGO ESTÁ MAL, POR FAVOR VUELVA A  😥</b>{" "}
             </div>{" "}
           </div>
         ) : null}
         {passSend ? (
           <div className="row">
             <div className="bg-success text-center col-12">
-              <b>Wiadomość trafiła we właściwe ręce 😎</b>{" "}
+              <b>El mensaje ha llegado a las manos adecuadas 😎</b>{" "}
             </div>{" "}
           </div>
         ) : null}

@@ -5,29 +5,19 @@ const navTop = () => {
         <ul className="navbar-nav">
           <li className="nav-item">
             <a href="tel:+6494461709" className="nav-link">
-              <span className="phone-icon">(+48) 787 121 488</span>
+              <span className="phone-icon">(+598) 462 46559 </span>
             </a>
           </li>
           <li className="nav-item">
             <a href="/#" className="nav-link">
-              <span className="clock-icon">Pon-Pt 8:00-16:00</span>
+              <span className="clock-icon">8:00 A 12:30 - 14:00 A 18:30</span>
             </a>
           </li>
         </ul>
         <ul className="navbar-nav">
-          <li className="nav-item">
+            <li className="nav-item">
             <a
-              href="https://www.facebook.com"
-              target="_blank"
-              className="nav-link"
-              rel="noopener noreferrer"
-            >
-              <span className="facebook-icon"></span>
-            </a>
-          </li>
-          <li className="nav-item">
-            <a
-              href="https://pl.linkedin.com"
+              href="https://www.linkedin.com/in/jorge-marquez-correa/"
               target="_blank"
               className="nav-link"
               rel="noopener noreferrer"

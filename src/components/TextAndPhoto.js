@@ -2,7 +2,7 @@
 import beztla1 from "./media/beztla1.png"
 import beztla2 from "./media/beztla2.png"
 import beztla3 from "./media/beztla3.png"
-import beztla5 from "./media/beztla5.png"
+import beztla5 from "./media/truck.png"
 import bez_tla_wieksze from "./media/bez_tla_wieksze.png"
 const TextaAndPhoto = () => {
   return (
@@ -20,16 +20,13 @@ const TextaAndPhoto = () => {
             // lineHeight: "30px",
           }}
         >
-          TANSPORT 
+         Transporte  de
         </div>
         <div className="transport-text" style={{color:'black'}}>
-          TOWAROWY
+         Containers
         </div>
         <h4 style={{ textAlign: "justify", color:'#383838'}}>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci
-          eveniet maiores explicabo deleniti fuga iusto officia odit molestias
-          animi ducimus atque, culpa doloremque placeat sit nisi? Optio
-          consequuntur consequatur saepe.
+        
         </h4>
       </div>
       <div className="col-lg-6 col-sm-12 text-center m-0">
