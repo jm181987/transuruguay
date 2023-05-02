@@ -1,36 +1,11 @@
 import { BiBuilding } from "react-icons/bi";
 import { FaPhone } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
-import { useRef } from "react";
-import emailjs from "@emailjs/browser";
 import { useState } from "react";
 const Forms = () => {
-  const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_0avem3t",
-        "template_8sitnwi",
-        form.current,
-        "tm6FWZ5W_B19OxRf8"
-      )
-      .then(
-        (result) => {
-          setshowPass(true);
-        },
-        (error) => {
-          setshowError(true);
-        }
-      );
-    e.target.reset();
-    setshowError(false);
-    setshowPass(false);
-  };
-  const [showError, setshowError] = useState(false);
-  const [showPass, setshowPass] = useState(false);
+  const [showError] = useState(false);
+  const [showPass] = useState(false);
   return (
     <div className="row" id="section6" style={{ backgroundColor: "rgb(27, 20, 100" }}>
       {/* "#443E7D" */}

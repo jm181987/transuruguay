@@ -29,7 +29,7 @@ const NavBar = (onClick) => {
       <a href="/#" className="navbar-brand navbar-margin-left" style={{ paddingBottom:"15px"}}>
         <img src={logo} alt="" className="icona" />
       </a>
-          {/* {windowSize.innerWidth} */}
+          {}
           {windowSize.innerWidth < 1205 ? (    
              <GiHamburgerMenu
               style={{ color: "#f6f6f6", fontSize: "30px", cursor: "pointer" }}

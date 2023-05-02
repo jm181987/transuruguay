@@ -1,8 +1,5 @@
-import { GiDesk } from "react-icons/gi";
-import { GrMoney } from "react-icons/gr";
+import { GiDesk, GiMoneyStack } from "react-icons/gi";
 import { IconContext } from "react-icons";
-import { GiMoneyStack } from "react-icons/gi";
-import { GiTruck } from "react-icons/gi";
 const Cooperation = () => {
   return (
     <div
