@@ -14,18 +14,7 @@ const navTop = () => {
             </a>
           </li>
         </ul>
-        <ul className="navbar-nav">
-            <li className="nav-item">
-            <a
-              href="https://www.linkedin.com/in/jorge-marquez-correa/"
-              target="_blank"
-              className="nav-link"
-              rel="noopener noreferrer"
-            >
-              <span className="linkedin-icon"></span>
-            </a>
-          </li>
-        </ul>
+        
       </div>
     </nav>
   );

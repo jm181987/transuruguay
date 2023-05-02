@@ -34,7 +34,12 @@ const InNumber = () => {
           <div className="fs-4 fw-bold mb-3">Fletes internacionales</div>
         </div>
       </div>
+      
     </div>
+    
+
+
+    
   );
 };
 

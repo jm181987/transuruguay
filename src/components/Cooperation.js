@@ -90,7 +90,7 @@ const Cooperation = () => {
                 className="accordion-body text-light"
                 style={{ wordWrap: "break-word" }}
               >
-                tel: <a href="tel:+605116996"> (+598) --- --- --- </a>{" "}
+                tel: <a href="tel:+605116996"> (+598) 462 46559 </a>{" "}
                 email: cuentasapagar@transuruguay.com
               </div>
             </div>
@@ -131,7 +131,7 @@ const Cooperation = () => {
                 className="accordion-body text-light"
                 style={{ wordWrap: "break-word" }}
               >
-                tel: <a href="tef:+665742323">(+598) --- --- ---  </a>
+                tel: <a href="tef:+665742323">(+598) 462 46559  </a>
                 email: facturacion@transuruguay.com
               </div>
             </div>

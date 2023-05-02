@@ -39,27 +39,23 @@ const NavBar = (onClick) => {
             <ul className="navbar-nav navbar-margin-right">
               <li className="nav-item">
                 <a href="#section0" className="nav-link">
-                  <h5>Home</h5>
+                  <h5>Inicio</h5>
                 </a>
               </li>
               <li className="nav-item">
                 <a href="#section1" className="nav-link">
-                  <h5>O nas</h5>
+                  <h5>Sobre Nosotros</h5>
                 </a>
               </li>
               <li className="nav-item">
                 <a href="#section2" className="nav-link">
-                  <h5>Naczepy</h5>
+                  <h5>Flota</h5>
                 </a>
               </li>
-              <li className="nav-item">
-                <a href="#section3" className="nav-link">
-                  <h5>Nasz Tabor</h5>
-                </a>
-              </li>
+             
               <li className="nav-item">
                 <a href="#section4" className="nav-link">
-                  <h5>Współpraca</h5>
+                  <h5>Administración</h5>
                 </a>
               </li>
               {/* <li className="nav-item">
@@ -69,63 +65,10 @@ const NavBar = (onClick) => {
               </li> */}
               <li className="nav-item">
                 <a href="#section6" className="nav-link">
-                  <h5>Kontakt</h5>
+                  <h5>Contactenos</h5>
                 </a>
               </li>
-              <li className="nav-item">
-                <a href="/#" className="nav-link">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="27"
-                    height="27"
-                    viewBox="0 0 8 5"
-                  >
-                    <rect width="8" height="5" fill="#dc143c" />
-                    <rect width="8" height="2.5" fill="#fff" />
-                  </svg>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="/#" className="nav-link">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 60 30"
-                    width="27"
-                    height="27"
-                  >
-                    <clipPath id="s">
-                      <path d="M0,0 v30 h60 v-30 z" />
-                    </clipPath>
-                    <clipPath id="t">
-                      <path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z" />
-                    </clipPath>
-                    <g clipPath="url(#s)">
-                      <path d="M0,0 v30 h60 v-30 z" fill="#012169" />
-                      <path
-                        d="M0,0 L60,30 M60,0 L0,30"
-                        stroke="#fff"
-                        strokeWidth="6"
-                      />
-                      <path
-                        d="M0,0 L60,30 M60,0 L0,30"
-                        clipPath="url(#t)"
-                        stroke="#C8102E"
-                        strokeWidth="4"
-                      />
-                      <path
-                        d="M30,0 v30 M0,15 h60"
-                        stroke="#fff"
-                        strokeWidth="10"
-                      />
-                      <path
-                        d="M30,0 v30 M0,15 h60"
-                        stroke="#C8102E"
-                        strokeWidth="6"
-                      />
-                    </g>
-                  </svg>
-                </a>
-              </li>
+              
             </ul>
           )}
           {showNavBar ? (
