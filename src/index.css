@@ -8,7 +8,7 @@
 }
 @media screen and (min-height: 450px) {
   #title-comapny {
-    font-size: calc(3.325rem + .9vw) !important;
+    font-size: calc(2.325rem + .9vw) !important;
   }
   #title-comapny-next {
     font-size: 2rem !important;
@@ -28,7 +28,7 @@
     padding-bottom: 80% !important;
   }
 }
-@media (min-width: 1200px){
+@media (min-width: 600px){
   #title-comapny {
     font-size: 4rem;
     color: wheat;
