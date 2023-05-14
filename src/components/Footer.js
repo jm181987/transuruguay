@@ -1,4 +1,3 @@
-import EU from "./media/logoEU.jpg";
 const Footer = () => {
   return (
     <>

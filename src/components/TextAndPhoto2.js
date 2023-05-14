@@ -1,8 +1,3 @@
-import wywrbeztla from "./media/wywrbeztla-1.png";
-import chlodniabeztla from "./media/chlodniabeztla.png";
-import beztla1 from "./media/beztla1.png"
-import beztla2 from "./media/beztla2.png"
-import beztla3 from "./media/beztla3.png"
 import beztla4 from "./media/truck2.png"
 const TextaAndPhoto2 = () => {
   return (

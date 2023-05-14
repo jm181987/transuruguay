@@ -2,10 +2,7 @@ import Header from "./components/Header";
 import Main from "./components/Main";
 // import {useState} from "react"
 import Footer from "./components/Footer"
-import Cookies from 'universal-cookie';
-import { BiNoEntry } from "react-icons/bi";
 function App() {
-const cookies = new Cookies();
 // cookies.set('SameSite', 'Pacman', { sameSite:'none', secure:"false" });
 
 // console.log(cookies.get('SameSite')); // Pacman

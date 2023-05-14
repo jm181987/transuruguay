@@ -1,4 +1,3 @@
-import star from "./media/star.mp4";
 import truckVideo from "./media/truck-video.mp4";
 import { AiOutlineArrowDown } from "react-icons/ai";
 const Video = () => {

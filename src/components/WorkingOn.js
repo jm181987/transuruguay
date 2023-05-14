@@ -1,5 +1,4 @@
 import React from "react";
-import { FaTemperatureHigh } from "react-icons/fa";
 import { RiTruckFill } from "react-icons/ri";
 const WorkingOn = () => {
   return (

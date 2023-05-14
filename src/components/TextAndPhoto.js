@@ -1,9 +1,5 @@
 // import chlodniabeztla from "./chlodniabeztla.png";
-import beztla1 from "./media/beztla1.png"
-import beztla2 from "./media/beztla2.png"
-import beztla3 from "./media/beztla3.png"
 import beztla5 from "./media/truck.png"
-import bez_tla_wieksze from "./media/bez_tla_wieksze.png"
 const TextaAndPhoto = () => {
   return (
     <div
